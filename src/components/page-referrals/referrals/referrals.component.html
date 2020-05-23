@@ -1,0 +1,54 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container referrals">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="referrals-container">
+        <div class="referrals-column customer-nav-column">
+          <customer-nav data-selected-link="'referrals'"></customer-nav>
+        </div>
+        <div class="referrals-column content-column">
+          <div class="referrals-title">Kidztime Referrals</div>
+          <div class="referrals-info">
+            <div class="referrals-image-container">
+              <img class="referrals-image mobile" src="/img/referrals-welcome-mobile.png"/>
+              <img class="referrals-image desktop" src="/img/referrals-welcome.png"/>
+              <div class="referrals-image-text">
+                Invite friends and earn $5 per invite!
+              </div>
+            </div>
+            <div class="referrals-description">
+              <p>Invite a friend and earn $5!</p>
+              <p>When a new user applies your code for their purchase, they get SGD 5 off and you get a SGD 5 discount code for your next purchase as well!</p>
+              <p>Simply send your friends your referral code or the give them the link below to instantly apply the referral code to their shopping cart.</p>
+            </div>
+          </div>
+          <div class="referrals-options">
+            <div class="referrals-option-container">
+              <div class="referrals-option-title">Option 1: Use your personal link</div>
+              <div class="referrals-personal-link">
+                <div class="link-title">Personal Link</div>
+                <div class="link-field">{{personalLink}}</div>
+                <button class="link-copy-btn" data-ng-click="copyInviteLink()">Copy</button>
+              </div>
+            </div>
+            <div class="referrals-option-container">
+              <div class="referrals-option-title">Option 2: Send an invite via email</div>
+              <cart-input
+                      class="referrals-option-email"
+                      data-title="'E-mail'"
+                      data-required="false"
+                      data-model="inviteForm.email"></cart-input>
+              <cart-input
+                      data-title="'Message'"
+                      data-required="false"
+                      data-mode="'textarea'"
+                      data-model="inviteForm.message"></cart-input>
+              <button class="referrals-invite-btn" data-ng-click="sendInvite()">Send Invite</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="referrals-bg-image" src="/img/account-order-bd.png"/>
+    </div>
+  </div>
+</div>

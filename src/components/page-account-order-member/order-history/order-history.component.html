@@ -1,0 +1,122 @@
+<div class="order-history">
+    <div class="account-section-title">View Your Order History</div>
+    <div class="order-history-list">
+        <div class="order-history-component"
+             data-ng-repeat="history in $ctrl.historyList"
+             data-ng-init="showContent = $first">
+            <div class="order-history-poster-column">
+                <img src="/img/account-order-icon.png">
+            </div>
+            <div class="order-history-content-column">
+                <div class="order-history-info-container">
+                    <div class="order-history-info" data-ng-class="{opened: showContent}">
+                        Order Reference: <b>{{history.cartOrder.reference}}</b>
+                    </div>
+                    <div class="order-history-info" data-ng-show="!showContent">
+                        Payment Total: <b>{{formatPrice(history.cartOrder.totalPrice)}}</b>
+                    </div>
+                    <div class="order-history-info" data-ng-show="!showContent">
+                        Order Date: <b>{{history.cartOrder.date}}</b>
+                    </div>
+                    <div class="order-history-info" data-ng-show="!showContent">
+                        Order Status: <b>{{history.cartOrder.status}}</b>
+                    </div>
+                </div>
+                <div class="order-history-controls" data-ng-class="{opened: showContent}">
+                    <div class="order-history-btn order-detail-btn"
+                         data-ng-click="showContent = true"
+                         data-ng-show="!showContent">Order Details</div>
+                    <div class="order-history-btn"
+                         data-ng-click="showContent = false"
+                         data-ng-show="showContent">CLOSE</div>
+                </div>
+                <div data-ng-show="showContent" style="width: 100%">
+                    <div class="order-history-tabs"
+                         data-ng-init="selectedTab = 'orderItems'">
+                        <div class="order-history-tab"
+                             data-ng-class="{ selected: selectedTab === 'orderItems' }"
+                             data-ng-click="selectedTab = 'orderItems'">Order items</div>
+                        <div class="order-history-tab"
+                             data-ng-class="{ selected: selectedTab === 'summary' }"
+                             data-ng-click="selectedTab = 'summary'">Summary</div>
+                    </div>
+                    <div class="order-history-items" data-ng-show="selectedTab === 'orderItems'">
+                        <div class="order-history-item" data-ng-repeat="product in history.products">
+                            <order-product
+                                    data-product="product"
+                                    data-editable="false"></order-product>
+                        </div>
+                        <div class="order-history-item" data-ng-repeat="bundle in history.bundles">
+                            <order-product
+                                    data-product="bundle"
+                                    data-editable="false"></order-product>
+                        </div>
+                        <order-summary
+                                data-cart-order="history.cartOrder"
+                                data-calculation-only="true"></order-summary>
+                    </div>
+                    <div class="order-history-summary" data-ng-show="selectedTab === 'summary'">
+                        <div class="order-history-summary-status">
+                            <span class="order-history-summary-title">Order Status:</span>
+                            <span class="order-history-summary-text">{{history.cartOrder.status}}</span>
+                            <div class="order-history-summary-timeline">
+                                <div class="timeline-item"
+                                     data-ng-class="{ done: history.cartOrder.summary.paymentDate }">
+                                    <span class="order-history-summary-text">Payment Date: </span>
+                                    <span class="order-history-summary-text">{{history.cartOrder.summary.paymentDate}}</span>
+                                </div>
+                                <div class="timeline-item"
+                                     data-ng-class="{ done: history.cartOrder.summary.processedDate }">
+                                    <span class="order-history-summary-text">Order Processed: </span>
+                                    <span class="order-history-summary-text">{{history.cartOrder.summary.processedDate}}</span>
+                                </div>
+                                <div class="timeline-item"
+                                     data-ng-class="{ done: history.cartOrder.summary.shippedDate }">
+                                    <span class="order-history-summary-text">Order Shipped: </span>
+                                    <span class="order-history-summary-text">{{history.cartOrder.summary.shippedDate}}</span>
+                                </div>
+                                <div class="timeline-item"
+                                     data-ng-class="{ done: history.cartOrder.summary.completedDate }">
+                                    <span class="order-history-summary-text">Order Completed: </span>
+                                    <span class="order-history-summary-text">{{history.cartOrder.summary.completedDate}}</span>
+                                </div>
+                            </div>
+                            <div class="order-history-summary-info">
+                                <div class="info-column">
+                                    <div class="info-block">
+                                        <div class="order-history-summary-title">SHIP TO</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.shipTo.client}}</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.shipTo.address}}</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.shipTo.addressCode}}</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.shipTo.phone}}</div>
+                                    </div>
+                                    <div class="info-block">
+                                        <div class="order-history-summary-title">SHIPPING METHOD</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.shippingMethod === 'standard' ? 'Standard Delivery' : 'Self Collection'}}</div>
+                                    </div>
+                                </div>
+                                <div class="info-column">
+                                    <div class="info-block">
+                                        <div class="order-history-summary-title">BILLING ADDRESS</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.billingAddress.client}}</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.billingAddress.address}}</div>
+                                        <div class="order-history-summary-text">{{history.cartOrder.summary.billingAddress.addressCode}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-history-pagination" data-ng-show="$ctrl.showPagination">
+            <div class="pagination-info">Showing {{$ctrl.historyList.length}} out of {{$ctrl.totalCount}} products </div>
+            <div class="pagination-bar">
+                <div class="pagination-bar-fill" data-ng-style="{ width : ($ctrl.historyList.length / $ctrl.totalCount * 100) + '%' }"></div>
+            </div>
+            <button class="pagination-show-more"
+                    data-ng-show="$ctrl.historyList.length < $ctrl.totalCount"
+                    data-ng-click="$ctrl.loadMore()">Show more recent orders</button>
+        </div>
+    </div>
+</div>

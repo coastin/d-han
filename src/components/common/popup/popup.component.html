@@ -1,0 +1,7 @@
+<div class="popup" data-ng-show="popupModel.isOpened()">
+    <div class="popup__layer" data-ng-click="popupModel.close()">
+        <div class="popup__content" data-ng-click="$event.stopPropagation()">
+            <ng-transclude></ng-transclude>
+        </div>
+    </div>
+</div>

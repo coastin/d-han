@@ -1,0 +1,311 @@
+.benefits {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.428;
+  background-color: #fff;
+  min-height: 100vh;
+  &.main-container {
+    @include breakpoint(md) {
+      padding: 0 50px 0 50px;
+    }
+    @include breakByWidth(1025px) {
+      padding: 0 2% 0 2%;
+    }
+  }
+  .benefits-container {
+    padding: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) {
+      padding: 60px 0 0 0;
+    }
+    @include breakByWidth(1025px) {
+      flex-direction: row;
+      padding: 60px 0 40px 20px;
+    }
+    @include breakpoint(xl) {
+      flex-direction: row;
+      padding: 60px 95px 40px 50px;
+    }
+  }
+
+  .benefits-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    &.customer-nav-column {
+      flex-grow: 0;
+      display: none;
+      @include breakByWidth(1025px) {
+        flex-basis: 260px;
+        min-width: 260px;
+        display: block;
+      }
+      @include breakpoint(xl) {
+        flex-basis: 300px;
+        min-width: 300px;
+      }
+    }
+    &.content-column {
+      width:  100%;
+      @include breakByWidth(1025px) {
+        width: calc(100% - 300px);
+      }
+    }
+  }
+
+  .benefits-column-title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      font-size: 26px;
+    }
+  }
+
+  .benefits-section {
+    margin-top: 5px;
+    @include breakpoint(md) {
+      margin-top: 40px;
+    }
+    &.section-redemption {
+      margin-top: 55px;
+      padding-bottom: 70px;
+      @include breakpoint(md) {
+        margin-top: 85px;
+      }
+      .benefits-form {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .benefits-section-title {
+    padding-top: 30px;
+    color: #000000;
+    border-bottom: 1px solid #97979794;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.68px;
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid #97979794;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .benefits-bg-image {
+    display: none;
+    width: 363px;
+    position: absolute;
+    top: -227px;
+    left: -154px;
+    opacity: 0.2;
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+
+  .benefits-description {
+    width: 100%;
+    padding-top: 20px;
+    @include breakpoint(md) {
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+    @include breakByWidth(1025px) {
+      width: 700px;
+    }
+    @include breakpoint(xxl) {
+      width: 950px;
+    }
+    p {
+      font-family: Affogato;
+      font-weight: 500;
+      line-height: 20px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      @include breakpoint(md) {
+        line-height: 27px;
+        font-size: 22px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .benefits-form {
+    @include breakByWidth(1025px) {
+      padding-right: 10px;
+      width: 700px;
+    }
+    @include breakpoint(xl) {
+      width: 800px;
+      padding-right: 50px;
+    }
+    .benefits-form-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include breakpoint(md) {
+        flex-direction: row;
+      }
+    }
+    .benefits-form-column {
+      flex-grow: 1;
+      flex-basis: 0;
+      &.form-column-left {
+        @include breakpoint(md) {
+          padding-right: 30px;
+        }
+      }
+      &.form-column-right{
+        @include breakpoint(md) {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .benefits-submit {
+    margin-top: 15px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 33px;
+    background-color: #2d2866;
+    color: #ffffff;
+    font-family: "Affogato";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 20px;
+    @include breakpoint(md) {
+      height: 30px;
+      width: 120px;
+    }
+  }
+
+  .benefits-form-selector {
+    width: 100%;
+    &.mobile {
+      margin-bottom: 30px;
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+    &.desktop {
+      display: none;
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
+    .field-title {
+      position: relative;
+      color: #a8acb9;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.4px;
+      line-height: 28px;
+      padding-left: 21px;
+      padding-bottom: 10px;
+    }
+    .selector-items {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .selector-item {
+        position: relative;
+        overflow: hidden;
+        width: 104px;
+        height: 103px;
+        border-radius: 19px;
+        border: 4px solid #979797;
+        margin-right: 15px;
+        cursor: pointer;
+        box-shadow: 0 9px 22px rgba(77, 95, 111, 0.3);
+        @include breakpoint(md) {
+          box-shadow: none;
+        }
+        &.selected {
+          border-color: #2d2866;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .benefits-voucher {
+    .benefits-voucher-title {
+      opacity: 0.87;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.15px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    .benefits-voucher-field {
+      position: relative;
+    }
+    .benefits-voucher-content {
+      width: 100%;
+      height: 42px;
+      border-radius: 100px;
+      background-color: #eff0f4;
+      padding: 10px 15px;
+    }
+    .benefits-voucher-button {
+      margin-top: 10px;
+      cursor: pointer;
+      width: 100%;
+      height: 42px;
+      border-radius: 33px;
+      background-color: #2d2866;
+      text-align: center;
+      padding-top: 10px;
+      color: #fff;
+      @include breakpoint(md) {
+        margin-top: 0px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 120px;
+      }
+    }
+  }
+
+  .redemption-card {
+    position: relative;
+    width: 325px;
+    height: 202px;
+    padding-right: 15px;
+    margin-top: 60px;
+    @include breakpoint(md) {
+      margin-top: 45px;
+    }
+    img {
+      width: 418px;
+      position: absolute;
+      top: calc(50% + 10px);
+      left: calc(50% + 12px);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+

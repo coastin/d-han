@@ -1,0 +1,94 @@
+<div class="create-account-popup">
+    <popup data-name="popupName">
+        <div class="create-account-popup__container">
+            <div class="create-account-popup__content">
+                <div class="create-account-popup__title">New User</div>
+                <div class="create-account-popup__separator"></div>
+                <div class="create-account-popup__form">
+                    <div class="create-account-popup__row">
+                        <div class="create-account-popup__column create-account-popup__column_margin_right">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'First name'"
+                                    data-required="true"
+                                    data-model="accountForm.firstName"></cart-input>
+                        </div>
+                        <div class="create-account-popup__column create-account-popup__column_margin_left">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'E-mail'"
+                                    data-required="true"
+                                    data-model="accountForm.email"></cart-input>
+                        </div>
+                    </div>
+                    <div class="create-account-popup__row">
+                        <div class="create-account-popup__column create-account-popup__column_margin_right">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Last name'"
+                                    data-required="true"
+                                    data-model="accountForm.lastName"></cart-input>
+                        </div>
+                        <div class="create-account-popup__column create-account-popup__column_margin_left">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Delivery Address'"
+                                    data-required="true"
+                                    data-model="accountForm.address"></cart-input>
+                        </div>
+                    </div>
+                    <div class="create-account-popup__row">
+                        <div class="create-account-popup__column create-account-popup__column_margin_right">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Phone number'"
+                                    data-required="true"
+                                    data-model="accountForm.phone"></cart-input>
+                        </div>
+                        <div class="create-account-popup__column create-account-popup__column_margin_left">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Postal Code'"
+                                    data-required="true"
+                                    data-model="accountForm.postalCode"></cart-input>
+                        </div>
+                    </div>
+                    <div class="create-account-popup__row">
+                        <div class="create-account-popup__column create-account-popup__column_margin_right">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Password'"
+                                    data-required="true"
+                                    data-model="accountForm.password"></cart-input>
+                        </div>
+                        <div class="create-account-popup__column create-account-popup__column_margin_left">
+                            <cart-input
+                                    class="create-account-popup__input"
+                                    data-title="'Confirm Password'"
+                                    data-required="true"
+                                    data-model="accountForm.passwordConfirm"></cart-input>
+                        </div>
+                    </div>
+                    <div class="create-account-popup__row">
+                        <div class="create-account-popup__column">
+                            <div class="create-account-popup__field">
+                                <div class="create-account-popup__field-title">Email Preference</div>
+                                <div class="create-account-popup__checkbox-container">
+                                    <input class="create-account-popup__checkbox-input"
+                                           type="checkbox"
+                                           id="emailPreference"
+                                           name="emailPreference"
+                                           data-ng-model="accountForm.isEmailPreferenceChecked">
+                                    <label class="create-account-popup__checkbox-label" for="emailPreference">We’ll keep you updated on special offers, new launches and more.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="create-account-popup__button"
+                        data-ng-click="createAccount()">Create Account</button>
+            </div>
+            <button class="create-account-popup__close-btn" data-ng-click="close()"></button>
+        </div>
+    </popup>
+</div>

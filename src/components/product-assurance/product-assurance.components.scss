@@ -1,0 +1,295 @@
+.product-assurance-sport-desktop {
+  margin-bottom: 80px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .assurance-img {
+    width: 50%;
+    img {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
+
+  .assurance-text {
+    width: 50%;
+    padding-left: 5.5%;
+    padding-right: 8%;
+    padding-top: 165px;
+    h3 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include breakpoint(xl) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+    h2 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      text-align: left;
+      font-weight: 900;
+      line-height: 35px;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include breakpoint(xl) {
+        line-height: 48px;
+        font-size: 40px;
+      }
+    }
+    p {
+      font-family: "Affogato";
+      color: #367de1;
+      text-align: left;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      font-size: 18px;
+      line-height: 25px;
+      @include breakpoint(xl) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+.product-assurance-sport-mobile {
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 18px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .assurance-img {
+    width: 100%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .assurance-text {
+    width: 100%;
+    text-align: left;
+    h3 {
+      color: #df4f6b;
+      font-family: "Affogato";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 29px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #2376d9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.8181818px;
+    }
+  }
+}
+
+.product-assurance-nozzle-desktop {
+  margin-bottom: 60px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .assurance-img {
+    width: 50%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
+
+  .assurance-text {
+    width: 50%;
+    padding-left: 5.5%;
+    padding-right: 8%;
+    padding-top: 165px;
+    h3 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include breakpoint(xl) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+    h2 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      text-align: left;
+      font-weight: 900;
+      line-height: 35px;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include breakpoint(xl) {
+        line-height: 48px;
+        font-size: 40px;
+      }
+    }
+    p {
+      font-family: "Affogato";
+      color: #367de1;
+      text-align: left;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      font-size: 18px;
+      line-height: 25px;
+      @include breakpoint(xl) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+.product-assurance-nozzle-mobile {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 18px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .assurance-img {
+    width: 100%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .assurance-text {
+    width: 100%;
+    text-align: left;
+    h3 {
+      color: #df4f6b;
+      font-family: "Affogato";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 29px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #2376d9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.8181818px;
+    }
+  }
+}
+
+.product-assurance-sipper-desktop {
+  margin-bottom: 60px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .assurance-img {
+    width: 50%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+      padding-left: 10%;
+    }
+  }
+
+  .assurance-text {
+    width: 50%;
+    padding-left: 5.5%;
+    padding-right: 8%;
+    padding-top: 165px;
+    h3 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include breakpoint(xl) {
+        font-size: 26px;
+        line-height: 35px;
+      }
+    }
+    h2 {
+      font-family: "Affogato";
+      color: #df4f6b;
+      text-align: left;
+      font-weight: 900;
+      line-height: 35px;
+      font-size: 30px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include breakpoint(xl) {
+        line-height: 48px;
+        font-size: 40px;
+      }
+    }
+    p {
+      font-family: "Affogato";
+      color: #367de1;
+      text-align: left;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 32px;
+      font-size: 18px;
+      line-height: 25px;
+      @include breakpoint(xl) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+.product-assurance-sipper-mobile {
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 18px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .assurance-img {
+    width: 100%;
+    margin-top: 40px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .assurance-text {
+    width: 100%;
+    text-align: left;
+    h3 {
+      color: #df4f6b;
+      font-family: "Affogato";
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 29px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #2376d9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: -0.8181818px;
+    }
+  }
+}

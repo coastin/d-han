@@ -1,0 +1,145 @@
+<div class="app-wrapper">
+  <section class="change-type-dinnerwares-melamine-desktop" ng-show="activeView === 'melamine'">
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="ui column container grid">
+          <button class="melamine-dw">
+            <h2>Why 100% Melamine?</h2>
+          </button>
+          <button class="open-bamboo-fibre" ng-click="changeView('bambooFibre')">
+            <img src="img/open-button-bamboo-fibre.png" />
+          </button>
+        </div>
+        <div class="ui column container grid">
+          <div class="dinnerwares-description">
+            <div class="property1-dinnerwares">
+              <img src="img/property1-melamine-dw.png" />
+              <p>BPA Phthlate Free & FDA food grade prints</p>
+            </div>
+            <div class="property2-dinnerwares">
+              <img src="img/property2-melamine-dw.png" />
+              <p>Heat Tested from 0°c to 90°c</p>
+            </div>
+            <div class="property3-dinnerwares">
+              <img src="img/property3-melamine-dw.png" />
+              <p>Sturdy & Break Resistant</p>
+            </div>
+            <div class="property4-dinnerwares">
+              <img src="img/property4-melamine-dw.png" />
+              <p>Dishwasher Friendly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="change-type-dinnerwares-melamine-mobile" ng-show="activeView === 'melamine'">
+    <div class="wrapper">
+      <div class="main-container">
+        <button class="melamine-dw">
+          <h2>Why 100% Melamine?</h2>
+        </button>
+        <div class="ui column container grid">
+          <div class="dinnerwares-description">
+            <div class="property1-dinnerwares">
+              <img src="img/property1-melamine-dw.png" />
+              <p>BPA Phthlate Free & FDA food grade prints</p>
+            </div>
+            <div class="property2-dinnerwares">
+              <img src="img/property2-melamine-dw.png" />
+              <p>Heat Tested from 0°c to 90°c</p>
+            </div>
+            <div class="property3-dinnerwares">
+              <img src="img/property3-melamine-dw.png" />
+              <p>Sturdy & Break Resistant</p>
+            </div>
+            <div class="property4-dinnerwares">
+              <img src="img/property4-melamine-dw.png" />
+              <p>Dishwasher Friendly</p>
+            </div>
+          </div>
+          <div class="change-type">
+            <button ng-click="changeView('bambooFibre')">Bamboo fibre <img src="img/right-arrow.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="change-type-dinnerwares-bambo-fibre-desktop" ng-show="activeView === 'bambooFibre'">
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="ui column container grid">
+          <img class="decor" src="img/decor-bamboo.png" />
+          <button class="open-melamine-dw" ng-click="changeView('melamine')">
+            <img src="img/open-button-melamine.png" />
+          </button>
+          <button class="bamboo-fibre">
+            <h2>Why Bamboo fibre?</h2>
+          </button>
+        </div>
+        <div class="ui column container grid">
+          <div class="dinnerwares-description">
+            <div class="property1-dinnerwares">
+              <img src="img/property1-bamboo-dw.png" />
+              <p>Naturally Sterile & Anti-Bacterial</p>
+            </div>
+            <div class="property2-dinnerwares">
+              <img src="img/property2-bamboo-dw.png" />
+              <p>BPA Phthlate Free & FDA food grade prints</p>
+            </div>
+            <div class="property3-dinnerwares">
+              <img src="img/property3-bamboo-dw.png" />
+              <p>Heat Tested from 0°c to 90°c</p>
+            </div>
+            <div class="property4-dinnerwares">
+              <img src="img/property4-bamboo-dw.png" />
+              <p>Sturdy & Break Resistant</p>
+            </div>
+            <div class="property5-dinnerwares">
+              <img src="img/property5-bamboo-dw.png" />
+              <p>Dishwasher Friendly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="change-type-bottle-bambo-fibre-mobile" ng-show="activeView === 'bambooFibre'">
+    <div class="wrapper">
+      <div class="main-container">
+        <img class="decor-mobile" src="img/decor-bamboo-mobile.png">
+        <button class="bamboo-dw">
+          <h2>Why Bamboo fibre?</h2>
+        </button>
+        <div class="ui column container grid">
+            <div class="dinnerwares-description">
+                <div class="property2-dinnerwares">
+                  <img src="img/property2-bamboo-dw.png" />
+                  <p>BPA Phthlate Free & FDA food grade prints</p>
+                </div>
+                <div class="property1-dinnerwares">
+                    <img src="img/property1-bamboo-dw.png" />
+                    <p>Naturally Sterile & Anti-Bacterial</p>
+                  </div>
+                <div class="property4-dinnerwares">
+                  <img src="img/property4-bamboo-dw.png" />
+                  <p>Sturdy & Break Resistant</p>
+                </div>
+                <div class="property3-dinnerwares">
+                  <img src="img/property3-bamboo-dw.png" />
+                  <p>Heat Tested from 0°c to 90°c</p>
+                </div>
+                <div class="property5-dinnerwares">
+                  <img src="img/property5-bamboo-dw.png" />
+                  <p>Dishwasher Friendly</p>
+                </div>
+              </div>
+          <div class="change-type">
+            <button ng-click="changeView('melamine')">100% MELAMINE <img src="img/right-arrow.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

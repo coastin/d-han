@@ -1,0 +1,96 @@
+.info-block-bag-material {
+  // position: relative;
+  background-color: #fcfcfc;
+  h1 {
+    color: #253aa6;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      font-size: 38px;
+    }
+  }
+  p {
+    color: #006fcf;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 29px;
+    @include breakpoint(md) {
+      font-size: 24px;
+      line-height: 37px;
+    }
+    @include breakpoint(lg) {
+      margin-top: 30px;
+    }
+  }
+  @include breakpoint(md) {
+    padding-bottom: 120px;
+  }
+  .material-matter-background-mobile-width {
+    padding-bottom: 95px;
+    display: block;
+    @include breakpoint(md) {
+      display: none;
+    }
+    .mobile-bg {
+      img {
+        width: 100%;
+        padding: 0 28px 0 0;
+      }
+    }
+  }
+  .material-text-mobile-width {
+    position: relative;
+    display: block;
+    padding: 0 14px;
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+  .material-text {
+    display: none;
+    background: #fcfcfc;
+    @include breakpoint(md) {
+      display: block;
+      top: 1%;
+    }
+    @include breakpoint(lg) {
+      top: 10%;
+    }
+    @include breakpoint(xl) {
+      top: 15%;
+    }
+    @include breakpoint(xxl) {
+      top: 25%;
+    }
+    img {
+      width: 100%;
+      padding-right: 0px;
+      @include breakpoint(xl) {
+        padding-right: 50px;
+      }
+    }
+    .content {
+
+      width: 72%;
+      @include breakpoint(md) {
+        width: 100%;
+      }
+      @include breakpoint(lg) {
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 100%;
+      }
+      @include breakpoint(xl) {
+        margin-left: 100px;
+        margin-top: 100px;
+        width: 85%;
+      }
+      @include breakpoint(xxl) {
+        margin-left: 140px;
+        margin-top: 140px;
+        width: 72%;
+      }
+    }
+  }
+}

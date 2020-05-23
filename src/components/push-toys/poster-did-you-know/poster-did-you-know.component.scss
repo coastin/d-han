@@ -1,0 +1,207 @@
+.poster-did-you-know {
+  margin-bottom: 30px;
+  text-align: center;
+  text-align: center;
+  font-family: "Affogato";
+  overflow: hidden;
+  @include breakpoint(md) {
+    margin-bottom: 70px;
+    padding-top: 71px;
+  }
+  .poster-desktop {
+    display: none;
+    justify-content: space-between;
+    @include breakpoint(md) {
+      display: flex;
+    }
+    .poster-img {
+      text-align: right;
+      width: 40%;
+      img {
+        width: 80%;
+      }
+    }
+    .title {
+      width: 50%;
+      text-align: left;
+      img {
+        width: 175px;
+        position: relative;
+        left: -20px;
+      }
+      h1 {
+        color: #241a6a;
+        font-family: "Affogato";
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 30px;
+        margin: 0;
+        margin-bottom: 25px;
+        @include breakpoint(lg) {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+      p {
+        color: #000000;
+        font-family: "Affogato";
+        font-size: 18px;
+        font-weight: 500;
+        @include breakpoint(lg) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .air-backpacks {
+    border-radius: 35px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-top: 70px;
+    padding: 30px 40px;
+    margin-left: 0;
+    margin-right: 0;
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    @include breakpoint(lg) {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    h2 {
+      color: #241a6a;
+      font-family: "Affogato";
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .backpacks-description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      .description {
+        display: flex;
+        align-items: center;
+      }
+      img {
+        width: 55px;
+        margin-right: 15px;
+        @include breakpoint(lg) {
+          width: 85px;
+        }
+      }
+      h4 {
+        margin: 0;
+        color: #241a6a;
+        font-family: "Affogato";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+      }
+    }
+  }
+  .poster-mobile {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    @include breakpoint(md) {
+      display: none;
+    }
+    .title {
+      width: 100%;
+      padding: 0 35px;
+      img {
+        width: 102px;
+        margin-left: -20px;
+        margin-bottom: -6px;
+      }
+      h1 {
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 10px 0;
+        line-height: 27px;
+      }
+      p {
+        color: #000000;
+        font-family: "Affogato";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 27px;
+        line-height: 19px;
+      }
+    }
+    .poster-img {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      img {
+        width: 60%;
+        &.desktop {
+          display: none;
+          @include breakpoint(md) {
+            display: inline-block;
+          }
+        }
+        &.mobile {
+          @include breakpoint(md) {
+            display: none;
+          }
+        }
+      }
+    }
+    .air-backpacks-mobile {
+      border-radius: 35px;
+      background-color: #f9f9f9;
+      width: 90%;
+      margin-top: 20px;
+      padding: 15px;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: center;
+      @include breakpoint(md) {
+        margin-top: 70px;
+      }
+      h2 {
+        color: #241a6a;
+        font-family: "Affogato";
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      h4 {
+        margin: 0;
+        color: #241a6a;
+        font-family: "Affogato";
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+      }
+      .backpacks-description {
+        text-align: left;
+        .description-group {
+          display: flex;
+          justify-content: space-between;
+        }
+        img {
+          width: 40px;
+          margin-right: 10px;
+        }
+        .description {
+          margin-top: 15px;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          &:last-child {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

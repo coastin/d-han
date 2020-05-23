@@ -1,0 +1,319 @@
+.order-summary {
+  position: relative;
+  display: none;
+  @include breakpoint(xl) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .summary-block {
+    margin-right: 20px;
+    margin-bottom: 100px;
+    width: 340px;
+    height: 752px;
+    box-shadow: 0 0 20px rgba(77, 95, 111, 0.3);
+    border-radius: 54px;
+    background-color: #ffffff;
+    padding: 50px 25px;
+    @include breakpoint(lg) {
+      width: 400px;
+    }
+    @include breakpoint(xl) {
+      width: 440px;
+    }
+    @include breakpoint(xxl) {
+      width: 480px;
+    }
+    &.calculation-only {
+      box-shadow: none;
+      border-radius: initial;
+      background-color: transparent;
+      height: auto;
+      margin-bottom: 0;
+      padding: 25px 20px 35px 20px;
+      .order-total {
+        margin-bottom: 0;
+      }
+    }
+    h3 {
+      color: #2d2866;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+    }
+    h4 {
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .select-shipping {
+      width: 100%;
+      height: 232px;
+      border-radius: 11px;
+      border: 2px solid #dfdeea;
+      padding: 23px 12px;
+      margin-bottom: 72px;
+      .circle {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #757575;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-right: 33px;
+        position: relative;
+      }
+      .select {
+        width: 10px;
+        height: 10px;
+        background: #757575;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .free-shipping {
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+      }
+      .self-shipping {
+        display: flex;
+        cursor: pointer;
+      }
+      .title {
+        margin-bottom: 28px;
+        h4 {
+          color: #022145;
+          font-family: "Affogato";
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #a8acb9;
+          font-family: "Affogato";
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 18px;
+          margin: 0;
+        }
+      }
+    }
+    h2 {
+      color: #2d2866;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+    }
+    .total-sum {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      h4 {
+        color: #000000;
+        margin: 0;
+      }
+    }
+    .promo-code-sum {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      h4 {
+        color: #e83c5e;
+        margin: 0;
+      }
+    }
+    .shipping-fee {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        color: #000000;
+        margin: 0;
+      }
+    }
+    .vertical-line {
+      width: 100%;
+      height: 1px;
+      background: #ccd6e0;
+      margin-bottom: 15px;
+    }
+    .order-total {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+      h4 {
+        color: #000000;
+        margin: 0;
+        font-weight: 700;
+      }
+    }
+    button {
+      cursor: pointer;
+      outline: none;
+      width: 100%;
+      height: 48px;
+      border-radius: 49px;
+      border: 0;
+      background-color: #1cb372;
+      color: #ffffff;
+      font-family: "Affogato";
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.order-summary-mobile {
+  display: block;
+  @include breakpoint(xl) {
+    display: none;
+  }
+  .summary-block {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 10px 40px 10px;
+    &.calculation-only {
+      box-shadow: none;
+      border-radius: initial;
+      background-color: transparent;
+      height: auto;
+      margin-bottom: 0;
+      padding: 25px 20px 35px 20px;
+      .order-total {
+        margin-bottom: 0;
+      }
+    }
+    h3 {
+      color: #2d2866;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+      text-transform: uppercase;
+    }
+    h4 {
+      font-family: "Affogato";
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.36px;
+    }
+    .select-shipping {
+      width: 100%;
+      height: 263px;
+      border-radius: 11px;
+      border: 2px solid #dfdeea;
+      padding: 23px 12px;
+      margin-bottom: 40px;
+      .circle {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #2d2866;
+        border-radius: 50%;
+        margin-top: 2px;
+        margin-right: 22px;
+        position: relative;
+      }
+      .select {
+        width: 10px;
+        height: 10px;
+        background: #2d2866;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .free-shipping {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .self-shipping {
+        display: flex;
+      }
+      .title {
+        margin-bottom: 28px;
+        h4 {
+          color: #022145;
+          font-family: "Affogato";
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #a8acb9;
+          font-family: "Affogato";
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 23px;
+          margin: 0;
+        }
+      }
+    }
+    .total-sum {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      h4 {
+        color: #000000;
+        margin: 0;
+      }
+    }
+    .promo-code-sum {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      h4 {
+        color: #e83c5e;
+        margin: 0;
+      }
+    }
+    .shipping-fee {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4 {
+        color: #000000;
+        margin: 0;
+      }
+    }
+    .vertical-line {
+      width: 100%;
+      height: 1px;
+      background: #ccd6e0;
+      margin-bottom: 15px;
+    }
+    .order-total {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      h4 {
+        color: #000000;
+        margin: 0;
+        font-weight: 700;
+      }
+    }
+    button {
+      cursor: pointer;
+      outline: none;
+      width: 100%;
+      height: 48px;
+      border-radius: 49px;
+      border: 0;
+      background-color: #1cb372;
+      color: #ffffff;
+      font-family: "Affogato";
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<div class="cart-generic-selector">
+  <div class="selector-selected-items-container" data-ng-style="{ width: getSelectorContainerWidth() }">
+    <div class="selector-selected-items">
+      <div class="selector-selected-item" data-ng-repeat="selectedItemIndex in $ctrl.model.selectedItemsIndexes">
+        <img class="accessory-box-dotted" src="../../../../img/cart-accessory-box.png">
+        <img class="accessory-box-solid" src="../../../../img/cart-accessory-box-solid.png">
+        <div class="selector-selected-item-image"
+             data-ng-if="selector.getItemModel(selectedItemIndex)">
+          <img data-ng-src="{{selector.getItemModel(selectedItemIndex).image}}">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="selector-container" data-ng-show="$ctrl.isEditMode">
+    <div class="selector-header"
+         data-ng-class="{opened: selectorOpened}"
+         data-ng-click="selectorOpened = !selectorOpened">
+      <span>Select</span>
+      <img src="../../../../img/cart-icon-arrow-top.png">
+    </div>
+    <div class="selector-overlay" data-ng-show="selectorOpened"></div>
+    <div class="selector-layer" data-ng-show="selectorOpened">
+      <div class="selector-list" data-ng-show="selectorOpened">
+        <div class="selector-item"
+             data-ng-repeat="item in $ctrl.model.availableItems"
+             data-ng-class="{selected: item.quantity}">
+          <div class="selector-item-poster">
+            <img data-ng-src="{{item.image}}">
+          </div>
+          <div class="selector-item-content">
+            <div class="selector-item-title">{{item.title}}</div>
+            <div class="selector-item-old-price">{{formatPrice(item.oldPrice)}}</div>
+            <div class="selector-item-price">{{formatPrice(item.price)}}</div>
+            <div class="selector-item-quantity"
+                 data-ng-class="{ disabled: !selector.isItemSelected(item) && selector.isMaxCountReached() }"
+                 data-ng-if="!selector.singleSelectMode">
+              <div class="quantity-selector-minus"
+                   data-ng-click="selector.removeItem(item, 0);">
+                <img src="../../../../img/cart-selector-minus-icon.png">
+              </div>
+              <span class="quantity-selector-value">{{item.quantity}}</span>
+              <div class="quantity-selector-plus"
+                   data-ng-click="selector.addItem(item)">
+                <img src="../../../../img/cart-selector-plus-icon.png">
+              </div>
+            </div>
+            <div class="selector-item-toggle"
+                 data-ng-class="{ disabled: !selector.isItemSelected(item) && selector.isMaxCountReached() }"
+                 data-ng-if="selector.singleSelectMode"
+                 data-ng-click="selector.toggleItem(item)">
+              <img class="selector-item-toggle-content selector-item-toggle-selected" src="../../../../img/cart-icon-ok.png">
+              <span class="selector-item-toggle-content selector-item-toggle-unselected">SELECT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="selector-mobile-controls">
+        <div class="selector-mobile-close" data-ng-click="selectorOpened = !selectorOpened">
+          <img src="../../../../img/cart-icon-arrow-top.png">
+        </div>
+        <div class="selector-mobile-cancel-btn" data-ng-click="selectorOpened = !selectorOpened; $ctrl.cancel()">Cancel</div>
+        <div class="selector-mobile-update-btn" data-ng-click="selectorOpened = !selectorOpened; $ctrl.update()">Update</div>
+      </div>
+    </div>
+  </div>
+</div>

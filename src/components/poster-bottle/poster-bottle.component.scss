@@ -1,0 +1,302 @@
+.poster-sport-bottle {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  background-color: #edf4ff;
+  text-align: center;
+  font-family: "Affogato";
+  overflow: hidden;
+  @include breakpoint(md) {
+    margin-bottom: 50px;
+  }
+  .poster-desktop {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    .title {
+      width: 49%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 55px;
+        text-transform: uppercase;
+        padding-top: 200px;
+        padding-left: 20px;
+        @include breakpoint(lg) {
+          font-size: 50px;
+          line-height: 70px;
+          padding-top: 200px;
+        }
+        @include breakpoint(xl) {
+          font-size: 70px;
+          line-height: 90px;
+          padding-top: 250px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 75px;
+          line-height: 100px;
+          padding-top: 250px;
+          padding-left: 0px;
+        }
+        @include breakByWidth(1550px) {
+          font-size: 83px;
+          line-height: 110px;
+        }
+      }
+    }
+    .type-bottle {
+      width: 50%;
+      display: inline-block;
+      .circle {
+        border-radius: 50%;
+        position: relative;
+        top: 19px;
+        background: #d8e4f8;
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+        @include breakpoint(lg) {
+          width: 450px;
+          height: 450px;
+        }
+        @include breakpoint(xl) {
+          width: 500px;
+          height: 500px;
+        }
+        @include breakpoint(xxl) {
+          width: 602px;
+          height: 602px;
+        }
+        img {
+          position: absolute;
+          width: 69%;
+          top: 55px;
+          left: 116px;
+        }
+      }
+    }
+  }
+  .poster-mobile {
+    background-color: #d8e4f8;
+    position: relative;
+    margin-top: 46px;
+    @include breakpoint(md) {
+      display: none;
+    }
+    // .type-bottle {
+    //   padding-left: 42%;
+    //   padding-right: 2.9%;
+      img {
+        width: 100%;
+        margin-bottom: -5px;
+      }
+    // }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.classic-nozzle-bottle {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  background-color: #ffeef4;
+  text-align: center;
+  font-family: "Affogato";
+  overflow: hidden;
+  padding-top: 47px;
+  @include breakpoint(md) {
+    background-color: #ffdde8;
+    margin-bottom: 50px;
+  }
+  .poster-nozzle {
+    width: 100%;
+    margin-bottom: -5px;
+    display: none;
+    @include breakpoint(md) {
+      background-color: #ffdde8;
+      display: block;
+    }
+  }
+  .poster-desktop {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    .title {
+      width: 49%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      position: absolute;
+      top: 0;
+      left: 92px;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 55px;
+        text-transform: uppercase;
+        padding-top: 200px;
+        @include breakpoint(lg) {
+          font-size: 50px;
+          line-height: 70px;
+          padding-top: 200px;
+        }
+        @include breakpoint(xl) {
+          font-size: 70px;
+          line-height: 90px;
+          padding-top: 250px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 83px;
+          line-height: 110px;
+          padding-top: 250px;
+        }
+      }
+    }
+  }
+  .poster-mobile {
+    background-color: #ffeef4;
+    position: relative;
+    @include breakpoint(md) {
+      display: none;
+    }
+    .type-bottle {
+      img {
+        width: 100%;
+        margin-bottom: -5px;
+        margin-right: -5px;
+      }
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.classic-sipper-bottle {
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  background-color: #f4e8ff;
+  text-align: center;
+  font-family: "Affogato";
+  overflow: hidden;
+  padding-top: 47px;
+  @include breakpoint(md) {
+    margin-bottom: 50px;
+    background-color: #e8d0ff;
+  }
+  .poster-sipper {
+    width: 100%;
+    margin-bottom: -5px;
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+  .poster-desktop {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    .title {
+      width: 49%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      position: absolute;
+      top: 0;
+      left: 92px;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 55px;
+        text-transform: uppercase;
+        padding-top: 200px;
+        @include breakpoint(lg) {
+          font-size: 50px;
+          line-height: 70px;
+          padding-top: 200px;
+        }
+        @include breakpoint(xl) {
+          font-size: 70px;
+          line-height: 90px;
+          padding-top: 250px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 83px;
+          line-height: 110px;
+          padding-top: 250px;
+        }
+      }
+    }
+  }
+  .poster-mobile {
+    background-color: #f4e8ff;
+    position: relative;
+    @include breakpoint(md) {
+      display: none;
+    }
+    .type-bottle {
+      img {
+        width: 100%;
+        margin-bottom: -5px;
+        margin-right: -5px;
+      }
+    }
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      h1 {
+        color: #232521;
+        font-family: "Affogato";
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

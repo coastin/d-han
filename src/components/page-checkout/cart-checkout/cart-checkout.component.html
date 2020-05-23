@@ -1,0 +1,107 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container cart-checkout">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="cart-checkout-container">
+        <div class="cart-checkout-column cart-form">
+          <div class="cart-title">CHECKOUT</div>
+          <div class="cart-form-section">
+            <div class="cart-section-title">Shipping Details</div>
+          </div>
+          <div class="cart-checkout-shipping-form">
+            <div class="cart-form-row">
+              <div class="cart-form-column cart-form-column-left">
+                <cart-input
+                        data-title="'First name'"
+                        data-required="true"
+                        data-model="shippingForm.firstName"></cart-input>
+                <cart-input
+                        data-title="'Last name'"
+                        data-required="true"
+                        data-model="shippingForm.lastName"></cart-input>
+                <cart-input
+                        data-title="'Phone Number'"
+                        data-required="true"
+                        data-model="shippingForm.phone"
+                        data-type="'tel'"></cart-input>
+              </div>
+              <div class="cart-form-column cart-form-column-right">
+                <cart-input
+                        data-title="'E-mail'"
+                        data-required="true"
+                        data-model="shippingForm.email"
+                        data-type="'email'"></cart-input>
+                <cart-input
+                        data-title="'Delivery Address'"
+                        data-required="true"
+                        data-model="shippingForm.address"></cart-input>
+                <cart-input
+                        data-title="'Postal Code'"
+                        data-required="true"
+                        data-model="shippingForm.postalCode"></cart-input>
+              </div>
+            </div>
+            <div class="cart-form-row cart-form-row-notes">
+              <div class="cart-form-column">
+                <cart-input
+                        data-title="'Notes to seller'"
+                        data-required="false"
+                        data-model="shippingForm.notes"
+                        data-mode="'textarea'"></cart-input>
+              </div>
+            </div>
+          </div>
+          <div class="cart-form-section cart-form-section-payment">
+            <div class="cart-section-title">Payment details:</div>
+          </div>
+          <div class="cart-checkout-shipping-form">
+            <div class="cart-form-row">
+              <div class="cart-form-column cart-form-column-left">
+                <cart-input
+                        data-title="'Name on card'"
+                        data-required="true"
+                        data-model="paymentForm.name"></cart-input>
+                <cart-input
+                        data-title="'Card number'"
+                        data-required="true"
+                        data-model="paymentForm.cardNumber"></cart-input>
+                <cart-input
+                      data-title="'Expiry MM/YY'"
+                      data-required="true"
+                      data-model="paymentForm.cardExpiry"></cart-input>
+                <cart-input
+                        data-title="'CVC'"
+                        data-required="true"
+                        data-model="paymentForm.cvc"></cart-input>
+                <cart-input
+                        data-title="'Primary billing address'"
+                        data-required="false"
+                        data-model="paymentForm.billingAddress"
+                        data-mode="'textarea'"></cart-input>
+              </div>
+              <div class="cart-form-column cart-form-column-right">
+                <div class="cart-payment-card" data-ng-show="showCard">
+                  <div class="cart-payment-card-content">
+                    <img src="/img/cart-payment-card.png"/>
+                    <div class="cart-payment-card-number">{{getCardData().cardNumber}}</div>
+                    <div class="cart-payment-card-name">{{getCardData().name}}</div>
+                    <div class="cart-payment-card-date-text">UNTIL END</div>
+                    <div class="cart-payment-card-date">{{getCardData().cardExpiry}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-checkout-column cart-order">
+          <img class="cart-order-bg" src="../../../../img/cart-bg-circle.png">
+          <order-summary
+                  cart-order="cartOrder"
+                  get-total-price="getTotalPrice()"
+                  submit-order="submitOrder()"
+                  mobile-result-only="true"></order-summary>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,202 @@
+.create-account-popup {
+  color: #000000;
+}
+
+.create-account-popup__container {
+  position: relative;
+  width: 334px;
+  height: calc(100vh - 100px);
+  padding: 62px 16px 19px 16px;
+  border-radius: 27px;
+  box-shadow: 0 22px 54px rgba(77, 95, 111, 0.3);
+  background-color: #ffffff;
+  background-image: url("/img/login-popup-background-pattern.png");
+  background-repeat: no-repeat;
+  background-size: 120px 53px;
+  @include breakpoint(md) {
+    width: 762px;
+    height: auto;
+    padding: 100px 25px 39px 25px;
+    border-radius: 54px;
+    background-image: url("/img/create-user-background-pattern.png");
+    background-size: 155px 95px;
+  }
+}
+
+.create-account-popup__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account-popup__input {
+  .cart-input-title {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.13px;
+    line-height: 24px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    @include breakpoint(md) {
+      padding-left: 21px;
+      padding-bottom: 7px;
+    }
+    .cart-input-required {
+      left: -5px;
+      @include breakpoint(md) {
+        left: 11px;
+      }
+    }
+  }
+  .cart-input-field input {
+    height: 40px;
+  }
+  .cart-input-field {
+    padding-bottom: 18px;
+  }
+}
+
+.create-account-popup__close-btn {
+  @include normalizeButton();
+  position: absolute;
+  top: 29px;
+  right: 18px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url('/img/login-popup-close-icon.png');
+  background-size: 100%;
+  @include breakpoint(md) {
+    top: 35px;
+    right: 38px;
+  }
+}
+
+.create-account-popup__title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.68px;
+  text-transform: uppercase;
+  padding: 0 0 3px 0;
+  @include breakpoint(md) {
+    padding: 10px 0 12px 0;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: normal;
+  }
+}
+
+.create-account-popup__form {
+  padding: 15px 5px 0 5px;
+  margin-bottom: 15px;
+  overflow-y: auto;
+  @include breakpoint(md) {
+    padding: 30px 15px 8px 15px;
+  }
+}
+
+.create-account-popup__row {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
+
+.create-account-popup__column {
+  flex-grow: 1;
+}
+
+.create-account-popup__column_margin_left {
+  @include breakpoint(md) {
+    padding-left: 20px;
+  }
+}
+
+.create-account-popup__column_margin_right {
+  @include breakpoint(md) {
+    padding-right: 20px;
+  }
+}
+
+.create-account-popup__field {
+  @include breakpoint(md) {
+    padding-left: 10px;
+  }
+}
+
+.create-account-popup__field-title {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.13px;
+  line-height: 24px;
+}
+
+.create-account-popup__checkbox-container {
+  line-height: 22px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  display: flex;
+  @include breakpoint(md) {
+    margin-top: 10px;
+  }
+}
+
+.create-account-popup__checkbox-input {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
+  margin-top: 3px;
+  @include breakpoint(md) {
+    margin-top: 0;
+  }
+}
+
+.create-account-popup__checkbox-label {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.create-account-popup__button {
+  @include normalizeButton();
+  width: calc(100% - 10px);
+  height: 40px;
+  min-height: 40px;
+  border-radius: 44px;
+  border: 2px solid #e83c5e;
+  color: rgba(232, 60, 94, 0.87);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin: 0 5px 0 5px;
+  @include breakpoint(md) {
+    align-self: center;
+    width: 320px;
+    height: 42px;
+    border-radius: 21px;
+    border: 1px solid #e83c5e;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.54px;
+    text-transform: uppercase;
+  }
+}
+
+.create-account-popup__separator {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(203, 214, 224, 0.47);
+}
+
+.create-account-popup__separator_margin-bottom {
+  margin-bottom: 15px;
+}

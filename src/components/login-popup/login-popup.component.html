@@ -1,0 +1,31 @@
+<div class="login-popup">
+    <popup data-name="popupName">
+        <div class="login-popup__container">
+            <div class="login-popup__content">
+                <div class="login-popup__title">SIGN IN</div>
+                <div class="login-popup__separator"></div>
+                <div class="login-popup__message">Hi, welcome back!</div>
+                <input class="login-popup__input" data-ng-model="form.username" placeholder="ID"/>
+                <input class="login-popup__input" data-ng-model="form.password" placeholder="Password"/>
+                <div class="login-popup__checkbox-container">
+                    <input class="login-popup__checkbox-input"
+                           type="checkbox"
+                           id="remember"
+                           name="remember"
+                           data-ng-model="form.isRememberChecked">
+                    <label class="login-popup__checkbox-label" for="remember">Remember me</label>
+                </div>
+                <button class="login-popup__button login-popup__button_color_login"
+                        data-ng-click="login()">Login</button>
+                <div class="login-popup__password-reset-container">
+                    <a class="login-popup__password-reset-link" data-ng-click="forgotPassword()">Forgot your password?</a>
+                </div>
+                <div class="login-popup__separator login-popup__separator_margin-bottom"></div>
+                <button class="login-popup__button login-popup__button_color_new-user"
+                        data-ng-click="createAccount()">New User</button>
+            </div>
+            <button class="login-popup__close-btn"
+                    data-ng-click="close()"></button>
+        </div>
+    </popup>
+</div>

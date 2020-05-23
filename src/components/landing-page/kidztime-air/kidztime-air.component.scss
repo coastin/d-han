@@ -1,0 +1,122 @@
+.kidztime-air{
+  background: url("/img/kidztime-air-bg.png") no-repeat center #B0E4F2;
+  background-size: cover;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 260px;
+    @media screen and (max-width: 768px){
+      padding-left: 40px;
+    }
+    &_text {
+      position: relative;
+      z-index: 1;
+      max-width: 462px;
+      width: 100%;
+      padding: 250px 0 149px;
+      margin-left: -32px;
+      @media screen and (max-width: 768px){
+        margin-left: 0;
+      }
+
+      &:not(.tablet) {
+        @media screen and (max-width: 768px){
+          .kidztime-air__wrapper_text_under-title, .shop-now {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px){
+          display: none;
+        }
+      }
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+          padding: 0 150px;
+          margin-bottom: 20px;
+          .kidztime-air__wrapper_text_under-title {
+            text-align: center;
+            margin-bottom: 12px;
+          }
+          .kidztime-air__wrapper_text_title {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px){
+          padding: 0 50px;
+          .kidztime-air__wrapper_text_title {
+            display: block;
+          }
+        }
+      }
+
+
+      &_title {
+        font-family: Affogato;
+        font-weight: 900;
+        font-size: 26.2px;
+        line-height: 55px;
+        text-align: left;
+        color: #000;
+        margin-bottom: 0px;
+
+        @include breakpoint(sm) {
+          min-width: 370px;
+          font-size: 60px;
+          line-height: 55px;
+          text-align: left;
+          margin-bottom: 15px;
+        }
+      }
+      &_under-title {
+        font-family: Oduda;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 8px;
+        br {
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+
+        @include breakpoint(sm) {
+          font-size: 24px;
+          line-height: 32px;
+          text-align: left;
+          margin-bottom: 65px;
+        }
+      }
+      .shop-now {
+        @include shopNow();
+      }
+    }
+    &_img {
+      display: flex;
+      align-items: flex-end;
+      max-width: 436px;
+      width: 100%;
+      margin-left: 17px;
+      @media screen and (max-width: 768px){
+        max-width: 315px;
+      }
+      @media screen and (max-width: 575px){
+        max-width: 216px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

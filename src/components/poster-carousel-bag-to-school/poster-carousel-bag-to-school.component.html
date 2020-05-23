@@ -1,0 +1,39 @@
+<div class="app-wrapper">
+    <section class="poster-carausel-bag">
+        <ul rn-carousel rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex">
+            <li ng-repeat="slide in slides">
+                <div class="carausel-slide">
+                    <div class="wrapper">
+                        <!-- <div class="main-container"> -->
+                            <div class="ui column container grid carausel-slide-content">
+                                <img class="slide-poster-desktop" ng-src="{{slide.src}}" alt="img">
+                                <img class="slide-poster-mobile" ng-src="{{slide.srcMobile}}" alt="img">
+                                <div class="slide-info-container">
+                                    <div class="ui right aligned grid">
+                                        <div class="right floated left aligned eight wide computer eight wide tablet column sixteen wide mobile">
+                                            <div class="slide-info-title">{{ slide.title }}</div>
+                                            <div class="slide-info-description">{{ slide.description }}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="carausel-controls">
+            <div class="wrapper">
+                <div class="main-container">
+                    <div class="carausel-control-content">
+                        <div class="carausel-control carausel-control-left" ng-click="prevSlide()"></div>
+                        <div class="carausel-control carausel-control-right" ng-click="nextSlide()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="carausel-indicators">
+        <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
+    </div>
+</div>

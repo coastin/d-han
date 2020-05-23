@@ -1,0 +1,30 @@
+<div class="order-product">
+  <div class="order-product-bundle-sum"
+       data-ng-if="$ctrl.product.isBundle">Bundle Sum: {{formatPrice(getTotalPrice())}}</div>
+  <div class="order-product-item"
+       data-ng-repeat="item in $ctrl.product.items">
+    <cart-product
+            data-product="{items: [item]}"
+            data-editable="false"></cart-product>
+    <div class="order-product-controls">
+      <div class="order-product-btn front-btn"
+           data-ng-click="showContent = true"
+           data-ng-show="!showContent && isProductActive(item)">Request Exchange/Return</div>
+      <div class="order-product-btn front-btn disabled"
+           data-ng-show="isProductProcessing(item)">Request Processing</div>
+      <div class="order-product-btn front-btn disabled"
+           data-ng-show="isProductRefunded(item)">Refunded</div>
+      <div class="order-product-form" data-ng-show="showContent">
+        <div class="form-field-title">Reasons for request.</div>
+        <textarea data-ng-model="item.requestReason"></textarea>
+        <div class="form-buttons">
+          <div class="order-product-btn"
+               data-ng-click="submitRequest(item); showContent = false">Submit Request</div>
+          <div class="order-product-btn cancel-btn"
+               data-ng-click="showContent = false">Cancel</div>
+        </div>
+      </div>
+      <div class="order-product-separator" data-ng-show="$ctrl.product.isBundle && !$last"></div>
+    </div>
+  </div>
+</div>

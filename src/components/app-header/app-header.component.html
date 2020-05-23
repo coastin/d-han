@@ -1,0 +1,104 @@
+<div class="app-wrapper">
+  <div class="header">
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="header-background">
+          <img class="header-desktop" src="img/header-desktop.png" />
+          <img class="header-mobile" src="img/header-mobile.png" />
+        </div>
+        <div class="ui fluid container layer">
+          <div class="row header-content">
+            <div class="menu-icon menu-icon-mobile" ng-click="openMobileMenu()">
+              <img src="/img/menu-icon.png" />
+            </div>
+            <div class="logo-container">
+              <a href="index.html">
+                <img src="img/Logo.png" />
+              </a>
+            </div>
+            <div class="menu-container">
+              <div class="nav-container">
+                <a class="item active" href="bag-page.html">bag to school</a>
+                <a class="item" href="dinnerwares.html">dinnerwares</a>
+                <a class="item" href="water-bottels.html">watter bottels</a>
+                <a class="item" href="landing-page.html">school accessories</a>
+                <a class="item">push & toys</a>
+                <a class="item">characters</a>
+                <div class="menu-icon" ng-click="openMobileMenu()">
+                  <img src="/img/menu-icon.png" />
+                </div>
+              </div>
+              <div class="user-container">
+                <div class="search-icon">
+                  <img src="/img/search-icon.png" />
+                </div>
+                <div class="shop-icon">
+                  <a href="cart.html">
+                    <img src="/img/shop-icon.png" />
+                    <span class="shop-count">2</span>
+                  </a>
+                </div>
+                <div class="user-profile">
+                  <span class="user-name">Lucy</span>
+                  <span class="user-avatar">
+                    <img src="/img/user-avatar.png" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile-container" ng-class="{'open': mobileMenuOpened}">
+      <div class="wrapper">
+        <div class="main-container">
+          <div class="header-background">
+            <img class="header-desktop" src="img/header-desktop.png" />
+            <img class="header-mobile" src="img/header-mobile.png" />
+          </div>
+          <div class="ui fluid container layer">
+            <div class="row header-content">
+              <div class="menu-icon menu-icon-mobile" ng-click="closeMobileMenu()">
+                <img src="/img/menu-close-icon.png" />
+              </div>
+              <div class="logo-container">
+                <img src="img/Logo.png" />
+              </div>
+              <div class="menu-container">
+                <div class="nav-container">
+                  <div class="menu-icon" ng-click="closeMobileMenu()">
+                    <img src="/img/menu-close-icon.png" />
+                  </div>
+                </div>
+                <div class="user-container">
+                  <div class="search-icon">
+                    <img src="/img/search-icon.png" />
+                  </div>
+                  <div class="shop-icon">
+                    <img src="/img/shop-icon.png" />
+                    <span class="shop-count">2</span>
+                  </div>
+                  <div class="user-profile">
+                    <span class="user-name">Lucy</span>
+                    <span class="user-avatar">
+                      <img src="/img/user-avatar.png" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li><a href="bag-page.html">Bag to school</a></li>
+            <li><a href="dinnerwares.html">Dinerwares</a></li>
+            <li><a href="water-bottels.html">Watter bottles</a></li>
+            <li><a href="landing-page.html">School accessories</a></li>
+            <li><a>Push & Toys</a></li>
+            <li><a>Characters</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

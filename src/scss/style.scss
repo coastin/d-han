@@ -1,0 +1,156 @@
+@import "fonts";
+@import "mixin";
+
+@import "../components/poster-carousel/poster-carousel.component.scss";
+@import "../components/app-header/app-header.component.scss";
+@import "../components/meal-select/meal-select.component.scss";
+@import "../components/info-block-material/info-block-material.component.scss";
+@import "../components/info-block-food/info-block-food.component.scss";
+@import "../components/products-list/products-list.component.scss";
+@import "../components/app-footer/app-footer.component.scss";
+@import "../components/info-block-weight/info-block-weight.component.scss";
+@import "../components/info-block-bag-material/info-block-bag-material.component.scss";
+@import "../components/products-list-bag-to-school/products-list-bag-to-school.component.scss";
+@import "../components/meal-select-bag-to-school/meal-select-bag-to-school.component.scss";
+@import "../components/bag-content/bag-content.component.scss";
+@import "../components/poster-carousel-bag-to-school/poster-carousel-bag-to-school.component.scss";
+@import "../components/product-assurance/product-assurance.components.scss";
+@import "../components/product-recommend-age/product-recommend-age.component.scss";
+@import "../components/bottle-material-matters/bottle-material-matters.component.scss";
+@import "../components/change-type-bottle/change-type-bottle.component.scss";
+@import "../components/poster-bottle/poster-bottle.component.scss";
+@import "../components/poster-dinnerwares/poster-dinnerwares.component.scss";
+@import "../components/change-type-dinnerwares/change-type-dinnerwares.component.scss";
+@import "../components/page-cart/app-header-cart/app-header-cart.component.scss";
+@import "../components/page-cart/cart-manager/cart-manager.component.scss";
+@import "../components/page-cart/cart-product/cart-product.component.scss";
+@import "../components/page-cart/order-summary/order-summary.component.scss";
+@import "../components/page-cart/promo-code/promo-code.component.scss";
+@import "../components/push-toys/backpack-customize/backpack-customize.component.scss";
+@import "../components/push-toys/poster-dinnerwares-backpack/poster-dinnerwares-backpack.component.scss";
+@import "../components/push-toys/change-type-backpack/change-type-backpack.component.scss";
+@import "../components/push-toys/poster-did-you-know/poster-did-you-know.component.scss";
+@import "../components/push-toys/poster-plug-play/poster-plug-play.component.scss";
+@import "../components/page-cart/cart-generic-selector/cart-generic-selector.component.scss";
+@import "../components/page-checkout/cart-checkout/cart-checkout.component.scss";
+@import "../components/page-checkout/cart-input/cart-input.component.scss";
+@import "../components/page-account-order-member/account-order-member/account-order-member.component.scss";
+@import "../components/page-account-order-member/customer-nav/customer-nav.component.scss";
+@import "../components/page-account-order-member/order-product/order-product.component.scss";
+@import "../components/page-account-order-member/order-history/order-history.component";
+@import "../components/page-account-order-guest/account-order-guest/account-order-guest.component.scss";
+@import "../components/page-account-order-member/purchase-popup/purchase-popup.component.scss";
+@import "../components/page-account-order-member/account-settings/account-settings.component";
+@import "../components/page-account-order-member/kids-settings/kids-settings.component";
+@import "../components/page-referrals/referrals/referrals.component";
+@import "../components/page-contact-us-faq/contact-us-faq/contact-us-faq.component";
+@import "../components/page-benefits/benefits/benefits.component";
+@import "../components/common/popup/popup.component";
+@import "../components/login-popup/login-popup.component";
+@import "../components/create-account-popup/create-account-popup.component";
+@import "../components/forgot-password-popup/forgot-password-popup.component";
+@import "../components/landing-page/activity-kits/activity-kits.component";
+@import "../components/landing-page/colorem-sippers/colorem-sippers.component";
+@import "../components/landing-page/eco-dinnerwares/eco-dinnerwares.component";
+@import "../components/landing-page/kidztime-air/kidztime-air.component";
+@import "../components/landing-page/melamine-dinnerwares/melamine-dinnerwares.component";
+@import "../components/landing-page/mini-sipper-bottle/mini-sipper-bottle.component";
+@import '../components/landing-page/bamboo-lunch-box/bamboo-lunch-box.component';
+@import '../components/landing-page/bamboo-sippers/bamboo-sippers.component';
+@import '../components/landing-page/classic-sipper-bottle/classic-sipper-bottle.component';
+@import '../components/landing-page/classic-sipper-bottle-spider/classic-sipper-bottle-spider.component';
+@import '../components/landing-page/decorate-it/decorate-it.component';
+@import '../components/landing-page/kidz-time-accessories/kidz-time-accessories.component';
+@import '../components/landing-page/sports-bottles/sports-bottles.component';
+@import '../components/landing-page/stainless-steel-nozzles/stainless-steel-nozzles.component';
+
+body {
+  font-family: "Affogato";
+  background-color: #fcfcfc;
+  &.bg-white {
+    background-color: #fff;
+    @include breakpoint(md) {
+      background-color: #fcfcfc;
+    }
+  }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.app-wrapper {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.main-container {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  @include breakpoint(md) {
+    padding: 0 2% 0 2%;
+  }
+  @include breakByWidth(1400px) {
+    padding: 0 4.75% 0 4.75%;
+  }
+}
+
+.ui.grid,
+.ui.grid.container {
+  margin: 0;
+  width: 100% !important;
+}
+
+.ui.container {
+  margin: 0 !important;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "Affogato" !important;
+  @include breakpoint(lg) {
+    font-size: 30px;
+    line-height: 52px;
+  }
+  @include breakpoint(xl) {
+    font-size: 35px;
+  }
+  @include breakpoint(xxl) {
+    font-size: 38px;
+  }
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  @include breakpoint(md) {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  @include breakpoint(lg) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  @include breakpoint(xl) {
+    font-size: 20px;
+    line-height: 34px;
+  }
+}
+
+.container {
+  max-width: 1418px;
+  width: 100%;
+}

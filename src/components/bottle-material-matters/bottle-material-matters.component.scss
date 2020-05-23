@@ -1,0 +1,145 @@
+.bottle-material-matters-desktop {
+  margin-bottom: 130px;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/material-mater-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 114px;
+  text-align: center;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  img {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: -5px;
+    @include breakpoint(lg) {
+      margin-top: 125px;
+    }
+  }
+  h2 {
+    color: #252525;
+    font-family: "Affogato";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.45px;
+    @include breakpoint(lg) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @include breakpoint(xl) {
+      font-size: 50px;
+      line-height: 67px;
+    }
+  }
+  p {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.82px;
+    line-height: 32px;
+  }
+  h3 {
+    font-family: "Affogato";
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 32px;
+    @include breakpoint(lg) {
+      font-size: 22px;
+    }
+    @include breakpoint(xl) {
+      font-size: 24px;
+    }
+  }
+  .description-bottle-part {
+    margin-bottom: 150px;
+    @include breakpoint(xl) {
+      margin-bottom: 230px;
+    }
+    img {
+      width: 80%;
+      padding: 40px 0 40px 0;
+      margin: 0;
+    }
+    h3 {
+      color: #006fcf;
+      white-space: nowrap;
+      margin-bottom: 5px;
+    }
+    .description-part1 {
+      width: 50%;
+      padding-left: 14%;
+    }
+    .description-part2 {
+      width: 14%;
+    }
+    .description-part3 {
+      width: 16.6%;
+    }
+    .description-part4 {
+      width: 16.6%;
+    }
+  }
+  .mix-match-part {
+    padding-top: 160px;
+    img {
+      width: 30%;
+      padding: 0;
+      margin: 0;
+      @include breakpoint(xl) {
+        width: 20%;
+      }
+    }
+    h2 {
+      margin: 30px 0 30px 0;
+      color: #252525;
+    }
+    p {
+      color: #232323;
+      font-family: "Affogato";
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+
+.bottle-material-matters-mobile {
+  margin-bottom: 56px;
+  text-align: center;
+  position: relative;
+  background-image: url(../img/material-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 114px;
+  display: block;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .container {
+    justify-content: center;
+  }
+  h2 {
+    color: #232521;
+    font-family: "Affogato";
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  p {
+    color: #232323;
+    font-family: "Affogato";
+    font-size: 16px;
+    font-weight: 500;
+  }
+  img {
+    width: 100%;
+    margin-bottom: -5px;
+    margin-top: 100px;
+  }
+}

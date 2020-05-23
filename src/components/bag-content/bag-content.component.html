@@ -1,0 +1,164 @@
+<div class="app-wrapper">
+  <section class="bag-content">
+    <div class="bag-desktop-view">
+      <div class="wrapper">
+        <div class="main-container">
+          <div class="ui column container grid ">
+            <div class="nine wide column">
+              <div class="bag-info">
+                <h1>{{info.title}}</h1>
+                <p>{{info.description}}</p>
+              </div>
+              <div class="slider-container">
+                <div class="bag-content-slider" ng-show="selectedView === 'main'">
+                  <div class="slider-content">
+                    <ui-carousel
+                            slides="mainContentList"
+                            slides-to-show="5"
+                            slides-to-scroll="1"
+                            initial-slide="0">
+                      <carousel-item>
+                        <div class="bag-slider-item" data-slide-image="{{item.image}}">
+                          <img ng-src="{{item.icon}}" />
+                        </div>
+                      </carousel-item>
+                      <carousel-prev>
+                        <button class="left-click">
+                          <img src="img/Arrow-left.png" />
+                        </button>
+                      </carousel-prev>
+                      <carousel-next>
+                        <button class="right-click">
+                          <img src="img/Arrow-right.png" />
+                        </button>
+                      </carousel-next>
+                    </ui-carousel>
+                  </div>
+                </div>
+                <div class="bag-content-slider bag-front-cover" ng-show="selectedView === 'front'">
+                  <div class="slider-content">
+                    <ui-carousel
+                            slides="frontContentList"
+                            slides-to-show="5"
+                            slides-to-scroll="1"
+                            initial-slide="3">
+                      <carousel-item>
+                        <div class="bag-slider-item" data-slide-image="{{item.image}}">
+                          <img ng-src="{{item.icon}}" />
+                        </div>
+                      </carousel-item>
+                      <carousel-prev>
+                        <button class="left-click">
+                          <img src="img/Arrow-left.png" />
+                        </button>
+                      </carousel-prev>
+                      <carousel-next>
+                        <button class="right-click">
+                          <img src="img/Arrow-right.png" />
+                        </button>
+                      </carousel-next>
+                    </ui-carousel>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="seven wide column">
+              <div class="select-content-wrapper">
+                <div class="select-content">
+                  <img ng-class="{'front-cover-image': selectedView === 'front'}" ng-src="{{selectedBagImage}}"/>
+                  <div class="background-select"></div>
+                </div>
+                <div class="select-content-button">
+                  <div class="ui column container grid">
+                    <div class="eight wide column">
+                      <button ng-class="{active: selectedView === 'main'}" ng-click="selectView('main')">MAIN COMPONENT</button>
+                    </div>
+                    <div class="eight wide column">
+                      <button ng-class="{active: selectedView === 'front'}" ng-click="selectView('front')">FRONT COVER</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bag-mobile-view">
+      <img class="bg-img-mobile bg-img-top-mobile" src="/img/bag-content-bg-top-mobile.png">
+      <div class="bag-info">
+        <h1>{{info.title}}</h1>
+        <p>{{info.description}}</p>
+      </div>
+      <div class="select-content-wrapper">
+        <div class="select-content">
+          <img ng-class="{'front-cover-image': selectedView === 'front'}" ng-src="{{selectedBagImage}}"/>
+          <div class="background-select"></div>
+        </div>
+        <div class="slider-container slider-container-mobile">
+          <div class="bag-content-slider" ng-show="selectedView === 'main'">
+            <div class="slider-content">
+              <ui-carousel
+                      slides="mainContentList"
+                      slides-to-show="5"
+                      slides-to-scroll="1"
+                      initial-slide="0">
+                <carousel-item>
+                  <div class="bag-slider-item" data-slide-image="{{item.image}}">
+                    <img ng-src="{{item.icon}}" />
+                  </div>
+                </carousel-item>
+                <carousel-prev>
+                  <button class="left-click">
+                    <img src="img/bag-slider-arrow-left-mobile.png" />
+                  </button>
+                </carousel-prev>
+                <carousel-next>
+                  <button class="right-click">
+                    <img src="img/bag-slider-arrow-right-mobile.png" />
+                  </button>
+                </carousel-next>
+              </ui-carousel>
+            </div>
+          </div>
+          <div class="bag-content-slider bag-front-cover" ng-show="selectedView === 'front'">
+            <div class="slider-content">
+              <ui-carousel
+                      slides="frontContentList"
+                      slides-to-show="5"
+                      slides-to-scroll="1"
+                      initial-slide="3">
+                <carousel-item>
+                  <div class="bag-slider-item" data-slide-image="{{item.image}}">
+                    <img ng-src="{{item.icon}}" />
+                  </div>
+                </carousel-item>
+                <carousel-prev>
+                  <button class="left-click">
+                    <img src="img/bag-slider-arrow-left-mobile.png" />
+                  </button>
+                </carousel-prev>
+                <carousel-next>
+                  <button class="right-click">
+                    <img src="img/bag-slider-arrow-right-mobile.png" />
+                  </button>
+                </carousel-next>
+              </ui-carousel>
+            </div>
+          </div>
+        </div>
+        <div class="select-content-button">
+          <div class="ui column container grid">
+            <div class="eight wide column" style="padding-right: 7px;">
+              <button ng-class="{active: selectedView === 'main'}" ng-click="selectView('main')">MAIN COMPONENT</button>
+            </div>
+            <div class="eight wide column" style="padding-left: 7px;">
+              <button ng-class="{active: selectedView === 'front'}" ng-click="selectView('front')">FRONT COVER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="bg-img-mobile bg-img-bottom-mobile" src="/img/bag-content-bg-bottom-mobile.png">
+    </div>
+  </section>
+</div>

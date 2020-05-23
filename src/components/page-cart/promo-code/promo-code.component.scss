@@ -1,0 +1,425 @@
+.promo-code {
+  margin: 55px 0;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .promo-code-wrapper {
+    h3 {
+      color: #2d2866;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+    }
+    h4 {
+      color: #000000;
+      font-family: "Affogato";
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 14px;
+    }
+    p {
+      color: #a8acb9;
+      font-family: "Affogato";
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    .apply-button {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      height: 42px;
+      border-radius: 100px;
+      background-color: #eff0f4;
+      input {
+        border: 0;
+        margin-left: 20px;
+        outline: none;
+        background-color: #eff0f4;
+        outline: none;
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 144px;
+        height: 42px;
+        border-radius: 33px;
+        border: 1px solid #2d2866;
+        background-color: #ffffff;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.promo-code-mobile {
+  margin: 35px 20px;
+  display: block;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .promo-code-wrapper {
+    h3 {
+      color: #7f7f7f;
+      font-family: "Affogato";
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1.3px;
+      line-height: 28px;
+    }
+    p {
+      color: #8d919e;
+      font-family: "Affogato";
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+    .apply-button {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 42px;
+      border-radius: 100px;
+      background-color: #eff0f4;
+      margin: 10px 0;
+      input {
+        outline: none;
+        border: 0;
+        margin-left: 20px;
+        outline: none;
+        background-color: #eff0f4;
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 144px;
+        height: 42px;
+        border-radius: 33px;
+        border: 1px solid #2d2866;
+        background-color: #ffffff;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.promo-code-apply {
+  margin: 22px 0;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .promo-code-apply-wrapper {
+    border-radius: 11px;
+    border: 2px solid #dfdeea;
+    padding: 25px;
+    h4 {
+      color: #022145;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    p {
+      color: #a8acb9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+    .aplly-delete {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+          height: 71px;
+        }
+        p {
+          color: #5e5995;
+          font-family: "Affogato";
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          margin-left: 15px;
+          margin-bottom: 0px;
+        }
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 251px;
+        height: 48px;
+        border-radius: 33px;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border: 0;
+        box-shadow: 10px 7px 22px rgba(67, 76, 51, 0.41);
+      }
+    }
+  }
+}
+.promo-code-apply-mobile {
+  margin: 40px 13px 22px 20px;
+  display: block;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .promo-code-apply-wrapper {
+    border-radius: 11px;
+    border: 2px solid #dfdeea;
+    padding: 25px;
+    margin-bottom: 15px;
+    h4 {
+      color: #022145;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    p {
+      color: #a8acb9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+    .aplly-delete {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .apllied-ok {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+          height: 15px;
+          margin-right: 11px;
+        }
+        h3 {
+          margin-top: 0;
+          color: #60a712;
+          font-family: "Affogato";
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 136px;
+        height: 48px;
+        border-radius: 33px;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border: 0;
+        box-shadow: 10px 7px 22px rgba(67, 76, 51, 0.41);
+      }
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      height: 71px;
+    }
+    p {
+      color: #5e5995;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px;
+      margin-left: 15px;
+      margin-bottom: 0px;
+    }
+  }
+}
+.promo-code-not-applied {
+  margin: 22px 0;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  .promo-code-apply-wrapper {
+    border-radius: 11px;
+    border: 2px solid #dfdeea;
+    padding: 25px;
+    h4 {
+      color: #022145;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    p {
+      color: #a8acb9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+    .aplly-delete {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .not-apllied {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            height: 14px;
+            margin-right: 15px;
+          }
+          h3 {
+            color: #d0021b;
+            font-family: "Affogato";
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin: 0;
+          }
+        }
+        p {
+          color: #d0021b;
+          font-family: "Affogato";
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          margin-bottom: 0px;
+        }
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 251px;
+        height: 48px;
+        border-radius: 33px;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border: 0;
+        box-shadow: 10px 7px 22px rgba(67, 76, 51, 0.41);
+      }
+    }
+  }
+}
+.promo-code-not-applied-mobile {
+  margin: 40px 15px;
+  display: block;
+  @include breakpoint(md) {
+    display: none;
+  }
+  .promo-code-apply-wrapper {
+    border-radius: 11px;
+    border: 2px solid #dfdeea;
+    padding: 25px;
+    h4 {
+      color: #022145;
+      font-family: "Affogato";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    p {
+      color: #a8acb9;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+    .aplly-delete {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .not-apllied {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          img {
+            height: 14px;
+            margin-right: 15px;
+          }
+          h3 {
+            color: #d0021b;
+            font-family: "Affogato";
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin: 0;
+          }
+        }
+        p {
+          color: #d0021b;
+          font-family: "Affogato";
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          margin-bottom: 0px;
+        }
+      }
+      button {
+        cursor: pointer;
+        outline: none;
+        width: 136px;
+        height: 48px;
+        border-radius: 33px;
+        color: #2d2866;
+        font-family: "Affogato";
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+        background-color: #ffffff;
+        border: 0;
+        box-shadow: 10px 7px 22px rgba(67, 76, 51, 0.41);
+      }
+    }
+  }
+  h3 {
+    color: #d0021b;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+}

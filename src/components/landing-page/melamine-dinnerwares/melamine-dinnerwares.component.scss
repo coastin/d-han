@@ -1,0 +1,157 @@
+.melamine-dinnerwares {
+  background: #D9EFEC;
+  margin-bottom: 46px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    padding: 63px 23px 57px 40px;
+    @media screen and (max-width: 768px){
+      padding: 0;
+    }
+    &_boy {
+      max-width: 349px;
+      width: 100%;
+      padding-top: 19px;
+      @media screen and (max-width: 1200px){
+        display: none;
+      }
+      img {
+        min-width: 290px;
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_cup {
+      position: relative;
+      z-index: 1;
+      max-width: 556px;
+      width: 100%;
+      @media screen and (max-width: 575px){
+        margin: 0 auto;
+        max-width: 375px;
+      }
+      img {
+        @media screen and (min-width: 1200px){
+          min-width: 495px;
+        }
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_text {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: -10px;
+      margin-right: -68px;
+      padding-top: 73px;
+
+      &:not(.tablet) {
+        @media screen and (max-width: 768px){
+          margin-left: 0;
+          margin-right: -56px;
+          .melamine-dinnerwares__wrapper_text_under-title, .shop-now {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px){
+          display: none;
+        }
+      }
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          padding-top: 0;
+          margin-bottom: 20px;
+          .melamine-dinnerwares__wrapper_text_under-title {
+            padding: 0 50px;
+          }
+          .melamine-dinnerwares__wrapper_text_title {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px){
+          .melamine-dinnerwares__wrapper_text_title {
+            display: block;
+          }
+        }
+      }
+
+      &_title {
+        font-family: Affogato;
+        font-weight: 900;
+        font-size: 26.2px;
+        line-height: 55px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 0;
+
+
+        @include breakpoint(sm) {
+          color: #fff;
+          min-width: 710px;
+          padding: 8px 12px 12px;
+          background: #009378;
+          font-size: 44px;
+          line-height: 40px;
+          text-align: right;
+          margin-bottom: 29px;
+        }
+
+        @include breakpoint(md) {
+          font-size: 60px;
+          line-height: 55px;
+          text-align: left;
+        }
+
+        @media screen and (max-width: 1200px){
+          min-width: auto;
+          text-align: right;
+        }
+      }
+      &_under-title {
+        font-family: Oduda;
+        max-width: 625px;
+        width: 100%;
+        font-weight: normal;
+        font-size: 10.2px;
+        line-height: 14px;
+
+        text-align: center;
+        color: #000;
+
+
+        @media screen and (max-width: 1200px){
+          margin-left: 0
+        }
+
+        @include breakpoint(md) {
+          font-size: 30.39px;
+          line-height: 41px;
+          margin-left: 30px;
+          margin-bottom: 85px;
+        }
+
+        @include breakpoint(sm) {
+          font-size: 24px;
+          line-height: 32px;
+          text-align: center;
+        }
+      }
+      .shop-now{
+        margin-left: 31px;
+        @include shopNow();
+      }
+    }
+  }
+}

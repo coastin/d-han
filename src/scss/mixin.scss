@@ -1,0 +1,86 @@
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: 575px) {
+            @content;
+        }
+    } @else if $class == sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    } @else if $class == md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media (min-width: 992px) {
+            @content;
+        }
+    } @else if $class == xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    } @else if $class == xxl {
+        @media (min-width: 1440px) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+@mixin breakByWidth($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin clearFix(){
+    &:before,
+    &:after{
+        content: " ";
+        display: table;
+    }
+
+    &:after{
+        display: block;
+        clear: both;
+        height: 1px;
+        margin-top: -1px;
+        visibility: hidden;
+    }
+    &{
+        *zoom: 1;
+    }
+}
+
+@mixin normalizeButton() {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Affogato;
+    background-color: transparent;
+}
+
+@mixin shopNow() {
+    padding: 4px 3px;
+    background: #270089;
+    font-family: Affogato;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    text-transform: uppercase;
+    width: 82px;
+    display: block;
+    letter-spacing: 0.4px;
+    @include breakpoint(sm) {
+        text-align: left;
+        font-size: 32px;
+        line-height: 43px;
+        width: 197px;
+        padding: 7px 4px 3px 21px;
+    }
+}

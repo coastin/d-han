@@ -1,0 +1,141 @@
+.activity-kits {
+  background: #F7C89A;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    &_img {
+      display: flex;
+      align-items: center;
+      max-width: 827px;
+      width: 100%;
+      padding-top: 15px;
+      @media screen and (max-width: 768px){
+        max-width: 490px;
+      }
+      @media screen and (max-width: 575px){
+        max-width: 375px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_text {
+      position: relative;
+      left: -13px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 550px;
+      width: 100%;
+      margin-left: -55px;
+      padding: 244px 0 133px;
+
+      &:not(.tablet) {
+        max-width: inherit;
+        @media screen and (max-width: 768px) {
+          .activity-kits__wrapper_text_under-title, .shop-now {
+            display: none;
+          }
+          .activity-kits__wrapper_text_title {
+            max-width: 245px;
+            padding: 0;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          max-width: 100% ;
+          left: 0;
+          margin: 0 0 20px 0;
+          padding: 0 50px;
+          .activity-kits__wrapper_text_title {
+            display: none;
+          }
+          .activity-kits__wrapper_text_under-title {
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .activity-kits__wrapper_text_under-title .shop-now {
+            display: block;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          .activity-kits__wrapper_text_title,
+          .activity-kits__wrapper_text_under-title {
+            display: block;
+          }
+        }
+      }
+
+      &_title {
+        position: relative;
+        font-family: Affogato;
+        font-weight: 900;
+        font-size: 26.2px;
+        line-height: 55px;
+        color: #000;
+        margin-bottom: 0;
+
+        @include breakpoint(sm) {
+          margin-bottom: 15px;
+          font-size: 60px;
+          line-height: 55px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: -73px;
+          bottom: 73px;
+          width: 73px;
+          height: 83px;
+          background: url("/img/equally-red.png") no-repeat center;
+          @media screen and (max-width: 575px) {
+            display: none;
+          }
+        }
+      }
+      &_under-title {
+        font-family: Oduda;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 8px;
+        br {
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+        @include breakpoint(md) {
+          margin-bottom: 30px;
+        }
+        @include breakpoint(sm) {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 115px;
+        }
+
+      }
+      .shop-now {
+        @include breakpoint(sm) {
+          margin-right: 33px;
+        }
+        @include shopNow();
+      }
+    }
+  }
+}

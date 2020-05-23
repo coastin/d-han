@@ -1,0 +1,76 @@
+<div class="app-wrapper">
+    <section class="select-mealtime">
+        <div class="select-mealtime-desktop">
+            <div class="ui grid container mealtime-title">
+                <div class="sixteen wide column">
+                    <h1>Select your mealtime!</h1>
+                </div>
+            </div>
+            <div class="patern"><img src="img/meal-pattern.png" /></div>
+            <div class="wrapper">
+                <div class="main-container">
+                    <div class="ui stackable four column grid">
+                        <div class="column mealtime-item" ng-repeat="meal in meals" data-meal-index="{{$index}}" ng-class="{ 'active': selectedMealIndex === $index }">
+                            <div class="meal-image-container">
+                                <img ng-src="{{meal.src}}" />
+                            </div>
+                            <img class="meal-bg" src="img/meal-bg.png" />
+                            <span class="meal-name">{{meal.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description-mealtime">
+                <img src="img/description-mealtime.png" />
+                <div class="description-mealtime-content">
+                    <div class="wrapper">
+                        <div class="main-container">
+                            <div class="description-mealtime-item" ng-repeat="meal in meals" ng-show="selectedMealIndex === $index">
+                                <div class="description-mealtime-title">{{meal.title}}</div>
+                                <div class="description-mealtime-info">{{meal.description}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="select-mealtime-mobile">
+            <div class="mealtime-item" ng-repeat="meal in meals" data-meal-index="{{$index}}" ng-class="{'open': meal.open}">
+                <div class="wrapper">
+                    <div class="main-container">
+                        <div class="ui column fluid container">
+                            <div class="mealtime-item-header" ng-click="openMeal($index)" ng-class="{'open': meal.open}">
+                                <div class="mealtime-item-line">
+                                    <span class="meal-name">{{meal.name}}</span>
+                                    <span class="meal-expand-icon"></span>
+                                </div>
+                            </div>
+                            <div ng-show="meal.open" class="mealtime-item-content">
+                                <img class="meal-pattern-image desktop" src="img/meal-pattern.png" />
+                                <img class="meal-pattern-image mobile" src="img/meal-pattern-mobile.png" />
+                                <div class="meal-image-container">
+                                    <img ng-src="{{meal.src}}" />
+                                </div>
+                                <img class="meal-bg" src="img/meal-bg.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-show="meal.open" class="description-mealtime">
+                    <div class="wrapper">
+                        <div class="main-container">
+                            <div class="description-mealtime-content">
+                                <div class="description-mealtime-item">
+                                    <div class="description-mealtime-title">{{meal.title}}</div>
+                                    <div class="description-mealtime-info">{{meal.description}}</div>
+                                    <button class="ui button meal-buy-button">SHOP NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="select-mealtime-footer"></div>
+    </section>
+</div>

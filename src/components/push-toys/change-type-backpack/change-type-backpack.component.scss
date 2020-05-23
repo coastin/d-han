@@ -1,0 +1,236 @@
+.change-type-dinnerwares-desktop {
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+  background-color: #edf7ff;
+  padding-top: 58px;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 70px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  p {
+    color: #1d2632;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .melamine-dw {
+    width: 76%;
+    background-image: url(../img/button-backpack.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: transparent;
+    margin-left: -75px;
+    border: 0;
+    position: relative;
+    outline: none;
+    text-align: right;
+    height: 200px;
+    @include breakpoint(lg) {
+      height: 200px;
+    }
+    @include breakpoint(xl) {
+      height: 270px;
+    }
+    @include breakpoint(xxl) {
+      height: 326px;
+    }
+    h2 {
+      color: #008eff;
+      font-family: "Affogato";
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 67px;
+      text-transform: uppercase;
+      letter-spacing: -0.45px;
+      margin-top: -30px;
+      margin-right: 10px;
+      @include breakpoint(lg) {
+        font-size: 50px;
+      }
+      @include breakpoint(xl) {
+        font-size: 50px;
+        margin-right: 110px;
+      }
+    }
+  }
+  .dinnerwares-description {
+    margin-top: 50px;
+    @include breakpoint(xl) {
+      margin-top: 100px;
+    }
+    h3 {
+      color: #1d2632;
+      font-family: "Affogato";
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -1.09px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #1d2632;
+      font-family: "Affogato";
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -0.82px;
+      line-height: 27px;
+      text-align: center;
+    }
+    .property1-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+      @include breakpoint(xl) {
+        padding: 0px 30px;
+      }
+      img {
+        width: 86%;
+        margin-bottom: 35px;
+      }
+    }
+    .property2-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+      margin-top: 58px;
+      @include breakpoint(xl) {
+        padding: 0px 30px;
+      }
+      img {
+        width: 86%;
+        margin-bottom: 35px;
+      }
+    }
+    .property3-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+      @include breakpoint(xl) {
+        padding: 0px 30px;
+      }
+      img {
+        width: 86%;
+        margin-bottom: 35px;
+      }
+    }
+    .property4-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+      margin-top: 58px;
+      @include breakpoint(xl) {
+        padding: 0px 30px;
+      }
+      img {
+        width: 86%;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+.change-type-dinnerwares-mobile {
+  text-align: center;
+  position: relative;
+  background-image: url(../img/backpack-bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  p {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.8181818px;
+  }
+
+  .melamine-dw {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/backback-bg-mobile.png);
+    border: 0px;
+    position: relative;
+    text-align: center;
+    h2 {
+      color: #008eff;
+      font-family: "Affogato";
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .backpacks-mobile {
+    img {
+      width: 80%;
+      margin-top: -20px;
+      position: relative;
+    }
+  }
+
+  .dinnerwares-description {
+    padding-left: 0;
+    padding-right: 0;
+    h3 {
+      font-family: "Affogato";
+      margin-top: 0;
+    }
+    .property1-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    .property2-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    .property3-dinnerwares {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+    .property4-dinnerwares {
+      padding: 0 20px;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+  }
+}

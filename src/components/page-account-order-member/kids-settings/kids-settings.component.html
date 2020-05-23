@@ -1,0 +1,63 @@
+<div class="kids-settings">
+    <div class="account-section-title">My Kids Settings</div>
+    <div class="kids-settings-title">
+        Howdy! Tell us more about your kids to receive gifts and other freebies on special days like their birthdays, holidays & other special occasions :)
+    </div>
+    <div class="kids-settings-list">
+        <div class="kids-settings-item" data-ng-repeat="kid in kidsList">
+            <img data-ng-src="{{kid.kidImage}}"/>
+            <div class="kid-name">{{kid.fullName}}</div>
+            <div class="kid-field">Age: {{kid.age}} years old</div>
+            <div class="kid-field">Gender: {{kid.gender}}</div>
+            <div class="kid-field">Favorite TV:</div>
+            <div class="kid-tv-list">
+                <span class="kid-tv-item">{{kid.favouriteTv1}}</span>
+                <span class="kid-tv-item">{{kid.favouriteTv2}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="kids-settings-form">
+        <div class="kids-settings-form-row">
+            <div class="kids-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'First name'"
+                        data-required="true"
+                        data-model="kidForm.fullName"></cart-input>
+            </div>
+            <div class="kids-settings-form-column form-column-right">
+                <cart-input
+                        style="width: 109px"
+                        data-title="'Age'"
+                        data-required="true"
+                        data-model="kidForm.age"></cart-input>
+                <div class="kids-settings-radio-list"
+                     data-ng-init="kidForm.gender = 'boy'">
+                    <div class="radio"
+                         data-ng-class="{ selected: kidForm.gender === 'boy' }"
+                         data-ng-click="kidForm.gender = 'boy'">Boy</div>
+                    <div class="radio"
+                         data-ng-class="{ selected: kidForm.gender === 'girl' }"
+                         data-ng-click="kidForm.gender = 'girl'">Girl</div>
+                </div>
+            </div>
+        </div>
+        <div class="kids-settings-form-row">
+            <div class="kids-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'Favourite TV 1'"
+                        data-required="false"
+                        data-model="kidForm.favouriteTv1"></cart-input>
+            </div>
+            <div class="kids-settings-form-column form-column-right">
+                <cart-input
+                        data-title="'Favourite TV 2'"
+                        data-required="false"
+                        data-model="kidForm.favouriteTv2"></cart-input>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="kids-settings-submit"
+                data-ng-click="submitAccountForm()">Add Kid Profile</button>
+    </div>
+</div>

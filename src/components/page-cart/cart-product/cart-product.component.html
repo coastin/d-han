@@ -1,0 +1,69 @@
+<div class="cart-product">
+  <div class="cart-product-container">
+    <div class="cart-product-body">
+      <div class="cart-product-bundle-sum" data-ng-if="$ctrl.product.isBundle">Bundle Sum: {{formatPrice(getTotalPrice())}}</div>
+      <div class="cart-product-item" data-ng-repeat="item in $ctrl.product.items">
+        <div class="cart-product-poster">
+          <img data-ng-src="{{item.image}}">
+        </div>
+        <div class="cart-product-content">
+          <div class="cart-product-bundle-title" data-ng-if="item.bundleTitle">BUNDLE: {{item.bundleTitle}}</div>
+          <div class="cart-product-title">{{item.title}}</div>
+          <div class="cart-product-config-item cart-product-config-item">
+            <span>Item: </span>
+            <span>{{item.id}}</span>
+          </div>
+          <div class="cart-product-config-item cart-product-config-quantity">
+            <span>Qty: </span>
+            <span data-ng-show="!isEditMode || $ctrl.product.isBundle">{{item.quantity}}</span>
+            <div data-ng-show="isEditMode && !$ctrl.product.isBundle" class="cart-product-config-quantity-selector">
+              <div class="quantity-selector-minus" data-ng-click="decQuantity(item, 1)">
+                <img src="../../../../img/cart-minus-icon.png">
+              </div>
+              <span class="quantity-selector-value">{{item.quantity}}</span>
+              <div class="quantity-selector-plus" data-ng-click="incQuantity(item)">
+                <img src="../../../../img/cart-plus-icon.png">
+              </div>
+            </div>
+          </div>
+          <div class="cart-product-config-item cart-product-config-accessory" data-ng-if="item.accessory">
+            <div>Accessory</div>
+            <cart-generic-selector
+                    data-model="item.accessory"
+                    data-is-edit-mode="isEditMode"
+                    data-cancel="cancel()"
+                    data-update="update()"></cart-generic-selector>
+            <div class="cart-product-accessory-sum">
+              <span>Sum: </span>
+              <span>{{formatPrice(getAccessoryTotalPrice(item.accessory.availableItems))}}</span>
+            </div>
+          </div>
+          <div class="cart-product-config-item cart-product-config-gift" data-ng-if="item.gift">
+            <div>Gift</div>
+            <cart-generic-selector
+                    data-model="item.gift"
+                    data-is-edit-mode="isEditMode"
+                    data-cancel="cancel()"
+                    data-update="update()"></cart-generic-selector>
+          </div>
+          <div class="cart-product-price">
+            <span class="cart-product-price-value" data-ng-if="item.price">{{formatPrice(getTotalPrice())}}</span>
+            <span class="cart-product-price-old" data-ng-if="item.oldPrice">{{formatPrice(getTotalOldPrice())}}</span>
+          </div>
+          <div class="cart-product-edit-buttons" data-ng-if="$last" data-ng-show="isEditMode">
+            <button class="cart-product-cancel-btn" data-ng-click="cancel()">Cancel</button>
+            <button class="cart-product-update-btn" data-ng-click="update()">Update</button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-product-control-buttons">
+        <button class="cart-product-edit-btn"
+                data-ng-show="!isEditMode && $ctrl.editable"
+                data-ng-click="edit()">Edit</button>
+        <button class="cart-product-delete-btn" data-ng-show="isEditMode" data-ng-click="delete()">
+          <img src="../../../../img/cart-delete-icon.png">
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="cart-input">
+  <div class="cart-input-title">
+    <span>{{$ctrl.title}}</span>
+    <span class="cart-input-required" data-ng-show="$ctrl.required">*</span>
+  </div>
+  <div class="cart-input-field">
+    <input
+            data-ng-show="$ctrl.mode === 'input'"
+            data-ng-model="$ctrl.model"
+            type="{{$ctrl.type}}">
+    <textarea
+            data-ng-show="$ctrl.mode === 'textarea'"
+            data-ng-model="$ctrl.model"
+            type="{{$ctrl.type}}"></textarea>
+  </div>
+</div>

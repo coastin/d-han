@@ -1,0 +1,38 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container cart-manager">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="cart-manager-container">
+        <div class="cart-manager-column cart-list">
+          <div class="cart-title">CART</div>
+          <div class="cart-products-section">
+            <div class="cart-section-title">Product purchase details</div>
+            <div class="cart-section-list">
+              <div class="cart-section-item" data-ng-repeat="product in products">
+                <cart-product
+                        data-product="product"
+                        data-delete-executor="deleteExecutor(products, product)"
+                        data-editable="true"></cart-product>
+              </div>
+            </div>
+          </div>
+          <div class="cart-bundles-section">
+            <div class="cart-section-list">
+              <div class="cart-section-item" data-ng-repeat="bundle in bundles">
+                <cart-product
+                        data-product="bundle"
+                        data-delete-executor="deleteExecutor(bundles, bundle)"
+                        data-editable="true"></cart-product>
+              </div>
+            </div>
+          </div>
+          <promo-code cart-order="cartOrder"></promo-code>
+        </div>
+        <div class="cart-manager-column cart-order">
+          <img class="cart-order-bg" src="../../../../img/cart-bg-circle.png">
+          <order-summary cart-order="cartOrder" submit-order="submitOrder()"></order-summary>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

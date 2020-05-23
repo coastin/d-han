@@ -1,0 +1,73 @@
+<div class="account-settings">
+    <div class="account-section-title">Account Settings</div>
+    <div class="account-settings-form">
+        <div class="account-settings-form-row">
+            <div class="account-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'First name'"
+                        data-required="true"
+                        data-model="accountForm.firstName"></cart-input>
+            </div>
+            <div class="account-settings-form-column form-column-right">
+                <cart-input
+                        data-title="'E-mail'"
+                        data-required="true"
+                        data-model="accountForm.email"
+                        data-type="'email'"></cart-input>
+            </div>
+        </div>
+        <div class="account-settings-form-row">
+            <div class="account-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'Last name'"
+                        data-required="true"
+                        data-model="accountForm.lastName"></cart-input>
+            </div>
+            <div class="account-settings-form-column form-column-right">
+                <cart-input
+                        data-title="'Delivery Address'"
+                        data-required="true"
+                        data-model="accountForm.address"></cart-input>
+            </div>
+        </div>
+        <div class="account-settings-form-row">
+            <div class="account-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'Phone Number'"
+                        data-required="true"
+                        data-model="accountForm.phone"
+                        data-type="'tel'"></cart-input>
+            </div>
+            <div class="account-settings-form-column form-column-right">
+                <cart-input
+                        data-title="'Postal Code'"
+                        data-required="true"
+                        data-model="accountForm.postalCode"></cart-input>
+            </div>
+        </div>
+        <div class="account-settings-form-row">
+            <div class="account-settings-form-column form-column-left">
+                <cart-input
+                        data-title="'Password'"
+                        data-required="true"
+                        data-model="accountForm.password"
+                        data-type="'tel'"></cart-input>
+            </div>
+            <div class="account-settings-form-column form-column-right">
+                <cart-input
+                        data-title="'Confirm new password'"
+                        data-required="true"
+                        data-model="accountForm.passwordConfirm"></cart-input>
+            </div>
+        </div>
+        <div class="account-settings-email-preference">
+            <div class="email-preference-title">Email Preference</div>
+            <div class="email-preference-checkbox">
+                <input type="checkbox" data-ng-model="accountForm.emailPreference"/>
+                <span>We’ll keep you updated on special offers, new launches and more</span>
+            </div>
+            <button class="account-settings-submit"
+                    data-ng-click="submitAccountForm()">Update</button>
+        </div>
+    </div>
+</div>

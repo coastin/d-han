@@ -1,0 +1,99 @@
+<div class="order-summary">
+  <div class="summary-block" data-ng-class="{'calculation-only': $ctrl.calculationOnly}">
+    <h3 data-ng-show="!$ctrl.calculationOnly">Select a shipping method</h3>
+    <div class="select-shipping"
+         data-ng-show="!$ctrl.calculationOnly">
+      <div class="free-shipping" data-ng-click="$ctrl.cartOrder.shippingMethod = 'standard'">
+        <div class="circle">
+          <div class="select" data-ng-show="$ctrl.cartOrder.shippingMethod === 'standard'"></div>
+        </div>
+        <div class="title">
+          <h4>{{standardShippingTitle()}}</h4>
+          <p>Free over SGD30</p>
+        </div>
+      </div>
+      <div class="self-shipping" data-ng-click="$ctrl.cartOrder.shippingMethod = 'self'">
+        <div class="circle">
+          <div class="select" data-ng-show="$ctrl.cartOrder.shippingMethod === 'self'"></div>
+        </div>
+        <div class="title">
+          <h4>Self Collection (Free)</h4>
+          <p>
+            159 Sin Ming Rd,
+          </p>
+          <p>#03-01 Amtech Building 575625,</p>
+          <p>Mon to Fri, 10:00 am - 5:30 pm</p>
+        </div>
+      </div>
+    </div>
+    <h2 data-ng-show="!$ctrl.calculationOnly">Order Summary</h2>
+    <div class="total-sum">
+      <h4>Sub total:</h4>
+      <h4>{{format($ctrl.cartOrder.subTotal)}}</h4>
+    </div>
+    <div class="promo-code-sum">
+      <h4>Promo code(codecode):</h4>
+      <h4>{{format(-$ctrl.cartOrder.promoCode)}}</h4>
+    </div>
+    <div class="shipping-fee">
+      <h4>Shipping fee:</h4>
+      <h4>{{format($ctrl.cartOrder.shippingFee)}}</h4>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="order-total">
+      <h4>Order Total:</h4>
+      <h4>{{format(getTotalOrder())}}</h4>
+    </div>
+    <button
+            data-ng-show="!$ctrl.calculationOnly"
+            data-ng-click="$ctrl.submitOrder()">Checkout Now</button>
+  </div>
+</div>
+<div class="order-summary-mobile">
+  <div class="summary-block" data-ng-class="{'calculation-only': $ctrl.calculationOnly}">
+    <h3 data-ng-show="!$ctrl.mobileResultOnly && !$ctrl.calculationOnly">Shipping method</h3>
+    <div class="select-shipping" data-ng-show="!$ctrl.mobileResultOnly && !$ctrl.calculationOnly">
+      <div class="free-shipping" data-ng-click="$ctrl.cartOrder.shippingMethod = 'standard'">
+        <div class="circle">
+          <div class="select" data-ng-show="$ctrl.cartOrder.shippingMethod === 'standard'"></div>
+        </div>
+        <div class="title">
+          <h4>{{standardShippingTitle()}}</h4>
+          <p>Free over SGD30</p>
+        </div>
+      </div>
+      <div class="self-shipping" data-ng-click="$ctrl.cartOrder.shippingMethod = 'self'">
+        <div class="circle">
+          <div class="select" data-ng-show="$ctrl.cartOrder.shippingMethod === 'self'"></div>
+        </div>
+        <div class="title">
+          <h4>Self Collection (Free)</h4>
+          <p>159 Sin Ming Rd,</p>
+          <p>#03-01 Amtech Building 575625,</p>
+          <p>Mon to Fri,</p>
+          <p>10:00 am - 5:30 pm</p>
+        </div>
+      </div>
+    </div>
+    <div class="total-sum">
+      <h4>Sub total:</h4>
+      <h4>{{format($ctrl.cartOrder.subTotal)}}</h4>
+    </div>
+    <div class="promo-code-sum">
+      <h4>Promo code(codecode):</h4>
+      <h4>{{format(-$ctrl.cartOrder.promoCode)}}</h4>
+    </div>
+    <div class="shipping-fee">
+      <h4>Shipping fee:</h4>
+      <h4>{{format($ctrl.cartOrder.shippingFee)}}</h4>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="order-total">
+      <h4>Order Total:</h4>
+      <h4>{{format(getTotalOrder())}}</h4>
+    </div>
+    <button
+            data-ng-show="!$ctrl.calculationOnly"
+            data-ng-click="$ctrl.submitOrder()">Checkout Now</button>
+  </div>
+</div>

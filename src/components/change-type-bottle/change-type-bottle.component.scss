@@ -1,0 +1,1024 @@
+.change-type-sport-bottle-desktop {
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  background-color: #edf4ff;
+  padding-top: 75px;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 50px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  @include breakpoint(lg) {
+    padding-top: 95px;
+  }
+  h3 {
+    color: #1d2632;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+  }
+  p {
+    color: #1d2632;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .classic-sipper-bottle {
+    width: 21%;
+    background: transparent;
+    border-radius: 20px;
+    border: 0;
+    margin-top: -90px;
+    outline: none;
+    padding-right: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .classic-nozzle-bottle {
+    width: 21%;
+    background: transparent;
+    border-radius: 20px;
+    border: 0;
+    margin-top: -90px;
+    padding-left: 0;
+    padding-right: 0;
+    outline: none;
+    img {
+      width: 100%;
+    }
+  }
+  .sport-bottle-active {
+    width: 56%;
+    background: transparent;
+    border: 0;
+    position: relative;
+    margin: 0 1%;
+    outline: none;
+    img {
+      position: absolute;
+      top: -26px;
+      left: -28px;
+      width: 104%;
+      @include breakpoint(lg) {
+        top: -18px;
+      }
+      @include breakpoint(xl) {
+        top: -10px;
+      }
+    }
+    .title {
+      position: absolute;
+      top: -10px;
+      left: 99px;
+      text-align: left;
+      @include breakpoint(lg) {
+        top: 0px;
+        left: 150px;
+      }
+      @include breakpoint(xl) {
+        top: 20px;
+        left: 229px;
+      }
+      h2 {
+        color: #006fcf;
+        font-family: "Affogato";
+        font-size: 27px;
+        font-weight: 900;
+        letter-spacing: -0.45px;
+        text-transform: uppercase;
+        @include breakpoint(lg) {
+          font-size: 35px;
+        }
+        @include breakpoint(xl) {
+          font-size: 40px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .bottle-description {
+    margin-top: 50px;
+    h3 {
+      font-family: "Affogato";
+    }
+    .material-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+      @include breakpoint(xl) {
+        padding: 0 60px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .flexible-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+
+      @include breakpoint(xl) {
+        padding: 0 60px;
+        margin-top: 70px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .rough-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+
+      @include breakpoint(xl) {
+        padding: 0 60px;
+        margin-top: 10px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .replacement-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 24%;
+      display: inline-block;
+
+      @include breakpoint(xl) {
+        padding: 0 60px;
+        margin-top: 15px;
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        background: #2d2866;
+        border: 0.842105px solid #2d2866;
+        box-sizing: border-box;
+        border-radius: 19px;
+        text-transform: uppercase;
+        color: #ffffff;
+        height: 38px;
+        width: 130px;
+        font-family: "Affogato";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.change-type-sport-bottle-mobile {
+  text-align: center;
+  position: relative;
+  background-image: url(../img/change-type-bottle-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 35px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  h3 {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.8181818px;
+  }
+  p {
+    color: #1d2632;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .sport-bottle {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/change-type-bottle-mobile.png);
+    border: 0px;
+    position: relative;
+    text-align: center;
+    h2 {
+      color: #006fcf;
+      font-family: "Affogato";
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  .bottle-mobile {
+    position: relative;
+    img {
+      width: 100%;
+      margin-top: -60px;
+    }
+  }
+  .bottle-description {
+    margin-top: -10px;
+    padding-left: 0;
+    padding-right: 0;
+    h3 {
+      font-family: "Affogato";
+    }
+    .material-bottle {
+      padding: 0 15px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 40px;
+      img {
+        width: 100%;
+      }
+    }
+    .flexible-bottle {
+      padding: 0 15px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      margin-bottom: 40px;
+      img {
+        width: 109%;
+      }
+    }
+    .rough-bottle {
+      padding: 0 15px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .replacement-bottle {
+      padding: 0 15px;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 106%;
+      }
+      button {
+        background: #2d2866;
+        border: 0.842105px solid #2d2866;
+        box-sizing: border-box;
+        border-radius: 19px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 110px;
+        height: 32px;
+        font-family: "Affogato";
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.68px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .change-type {
+    width: 100%;
+    margin-bottom: 20px;
+    button {
+      position: relative;
+      text-align: left;
+      height: 45px;
+      margin-top: 70px;
+      width: 49%;
+      background: transparent;
+      border: 1px solid #5e5995;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 4px rgba(206, 206, 206, 0.5);
+      border-radius: 8px;
+      color: #6963a2;
+      font-family: "Affogato";
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.68px;
+      text-transform: uppercase;
+      padding-left: 10px;
+      &:first-child {
+        margin-right: 3px;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        width: 10px;
+      }
+    }
+  }
+}
+
+.change-type-nozzle-bottle-desktop {
+  margin-bottom: 100px;
+  text-align: center;
+  position: relative;
+  background-color: #edf4ff;
+  background-image: url(../img/classic-nozzle-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 90px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  @include breakpoint(lg) {
+    padding-top: 95px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 111px;
+  }
+  h3 {
+    color: #1d2632;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1.09px;
+  }
+  p {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.82px;
+    line-height: 24px;
+  }
+  .classic-sipper-bottle {
+    width: 21%;
+    background: transparent;
+    border-radius: 20px;
+    border: 0;
+    margin-top: -90px;
+    outline: none;
+    padding-left: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  .classic-nozzle-bottle-active {
+    width: 56%;
+    background: transparent;
+    border: 0;
+    position: relative;
+    outline: none;
+    img {
+      position: absolute;
+      top: -60px;
+      left: -28px;
+      width: 104%;
+    }
+    .title {
+      position: absolute;
+      top: 5px;
+      left: 130px;
+      text-align: left;
+      @include breakpoint(lg) {
+        top: 30px;
+        left: 165px;
+      }
+      @include breakpoint(xl) {
+        top: 10px;
+        left: 200px;
+      }
+      @include breakpoint(xxl) {
+        top: 49px;
+        left: 229px;
+      }
+      h2 {
+        color: #e15470;
+        font-family: "Affogato";
+        font-size: 27px;
+        font-weight: 900;
+        letter-spacing: -0.45px;
+        text-transform: uppercase;
+        @include breakpoint(lg) {
+          font-size: 35px;
+        }
+        @include breakpoint(xl) {
+          font-size: 45px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .sport-bottle {
+    width: 21%;
+    background: transparent;
+    border-radius: 40px;
+    border: 0px;
+    margin-top: -90px;
+    padding-right: 5px;
+    outline: none;
+    img {
+      width: 100%;
+    }
+  }
+  .bottle-description {
+    margin-top: 50px;
+    h3 {
+      font-family: "Affogato";
+    }
+    .property1-nozzle-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 32.5%;
+      display: inline-block;
+      @include breakpoint(xl) {
+        padding: 0 90px;
+        width: 33.1%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property2-nozzle-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 32.5%;
+      display: inline-block;
+      margin-top: 5px;
+      @include breakpoint(xl) {
+        padding: 0 90px;
+        width: 33.1%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property3-nozzle-bottle {
+      padding: 0 20px;
+      vertical-align: top;
+      width: 32.5%;
+      display: inline-block;
+      margin-top: 25px;
+      @include breakpoint(xl) {
+        padding: 0 90px;
+        width: 33.1%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.change-type-nozzle-bottle-mobile {
+  text-align: center;
+  position: relative;
+  background-image: url(../img/nozzle-bottle-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  h3 {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.8181818px;
+  }
+  p {
+    color: #1d2632;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .nozzle-bottle {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/nozzle-bg-title-mobile.png);
+    border: 0px;
+    position: relative;
+    text-align: center;
+    h2 {
+      color: #df4f6b;
+      font-family: "Affogato";
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .bottle-description {
+    padding-right: 0;
+    padding-left: 0;
+    h3 {
+      font-family: "Affogato";
+      margin-top: 15px;
+    }
+    .bottle-mobile {
+      margin-top: 40px;
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      img {
+        width: 75%;
+        margin-top: -60px;
+        z-index: 2;
+      }
+    }
+    .property1-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .property2-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .property3-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 109%;
+      }
+    }
+  }
+  .change-type {
+    width: 100%;
+    margin-bottom: 20px;
+    button {
+      position: relative;
+      text-align: left;
+      height: 45px;
+      margin-top: 70px;
+      width: 49%;
+      background: transparent;
+      border: 1px solid #5e5995;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 4px rgba(206, 206, 206, 0.5);
+      border-radius: 8px;
+      color: #6963a2;
+      font-family: "Affogato";
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.68px;
+      text-transform: uppercase;
+      outline: none;
+      padding-left: 10px;
+      &:first-child {
+        margin-right: 3px;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        width: 10px;
+      }
+    }
+  }
+}
+
+.change-type-sipper-bottle-desktop {
+  margin-bottom: 100px;
+  text-align: center;
+  position: relative;
+  background-color: #f2ebfe;
+  padding-top: 75px;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 50px;
+  display: none;
+  @include breakpoint(md) {
+    display: block;
+  }
+  @include breakpoint(lg) {
+    padding-top: 95px;
+  }
+  @include breakpoint(xl) {
+    padding-top: 170px;
+  }
+  h3 {
+    color: #1d2632;
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: -1.09px;
+    @include breakpoint(lg) {
+      font-size: 24px;
+    }
+  }
+  p {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.82px;
+    line-height: 24px;
+    @include breakpoint(lg) {
+      font-size: 18px;
+    }
+  }
+
+  .classic-sipper-bottle-active {
+    width: 56%;
+    background: transparent;
+    border: 0;
+    position: relative;
+    outline: none;
+    img {
+      position: absolute;
+      top: -55px;
+      left: 0px;
+      width: 100%;
+      @include breakpoint(lg) {
+        top: -72px;
+      }
+      @include breakpoint(xl) {
+        top: -128px;
+      }
+    }
+    .title {
+      position: absolute;
+      top: 20px;
+      left: 130px;
+      text-align: left;
+      @include breakpoint(lg) {
+        left: 229px;
+      }
+      @include breakpoint(xl) {
+        top: 0px;
+      }
+      @include breakpoint(xxl) {
+        top: 20px;
+      }
+      h2 {
+        color: #5a589f;
+        font-family: "Affogato";
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing: -0.45px;
+        text-transform: uppercase;
+        @include breakpoint(lg) {
+          font-size: 40px;
+        }
+        @include breakpoint(xl) {
+          font-size: 45px;
+        }
+        @include breakpoint(xxl) {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .classic-nozzle-bottle-close {
+    width: 21%;
+    background: transparent;
+    border-radius: 20px;
+    border: 0;
+    margin-top: -34px;
+    outline: none;
+    padding-left: 0;
+    padding-right: 0;
+    @include breakpoint(lg) {
+      margin-top: -45px;
+    }
+    @include breakpoint(xl) {
+      margin-top: -90px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .sport-bottle {
+    width: 21%;
+    background: transparent;
+    border-radius: 40px;
+    border: 0px;
+    margin-top: -34px;
+    padding-left: 0;
+    outline: none;
+    @include breakpoint(lg) {
+      margin-top: -45px;
+    }
+    @include breakpoint(xl) {
+      margin-top: -90px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .bottle-description {
+    margin-top: 100px;
+    @include breakpoint(lg) {
+      margin-top: 120px;
+    }
+    h3 {
+      font-family: "Affogato";
+    }
+    .property1-nozzle-bottle {
+      padding: 0 10px;
+      vertical-align: top;
+      width: 19%;
+      display: inline-block;
+      @include breakpoint(lg) {
+        padding: 0 20px;
+      }
+      @include breakpoint(xl) {
+        padding: 0 30px;
+        width: 19.7%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property2-nozzle-bottle {
+      padding: 0 10px;
+      vertical-align: top;
+      width: 19%;
+      display: inline-block;
+      margin-top: 56px;
+      @include breakpoint(lg) {
+        padding: 0 20px;
+      }
+      @include breakpoint(xl) {
+        padding: 0 30px;
+        width: 19.7%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property3-nozzle-bottle {
+      padding: 0 10px;
+      vertical-align: top;
+      width: 19%;
+      display: inline-block;
+      @include breakpoint(lg) {
+        padding: 0 20px;
+      }
+      @include breakpoint(xl) {
+        padding: 0 30px;
+        width: 19.7%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property4-nozzle-bottle {
+      padding: 0 10px;
+      vertical-align: top;
+      width: 19%;
+      display: inline-block;
+      margin-top: 50px;
+      @include breakpoint(lg) {
+        padding: 0 20px;
+      }
+      @include breakpoint(xl) {
+        padding: 0 30px;
+        width: 19.7%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .property5-nozzle-bottle {
+      padding: 0 10px;
+      vertical-align: top;
+      width: 19%;
+      display: inline-block;
+      @include breakpoint(lg) {
+        padding: 0 20px;
+      }
+      @include breakpoint(xl) {
+        padding: 0 30px;
+        width: 19.7%;
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        background: #2d2866;
+        border: 0.842105px solid #2d2866;
+        box-sizing: border-box;
+        border-radius: 19px;
+        text-transform: uppercase;
+        color: #ffffff;
+        height: 38px;
+        width: 130px;
+        font-family: "Affogato";
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.change-type-sipper-bottle-mobile {
+  text-align: center;
+  position: relative;
+  background-image: url(../img/classic-sipper-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-family: "Affogato";
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  @include breakpoint(md) {
+    display: none;
+  }
+  h3 {
+    color: #1d2632;
+    font-family: "Affogato";
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.8181818px;
+  }
+  p {
+    color: #1d2632;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .sipper-bottle {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/shipper-bottle-bg-title-mobile.png);
+    border: 0px;
+    position: relative;
+    text-align: center;
+    h2 {
+      color: #5a589f;
+      font-family: "Affogato";
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 35px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .bottle-description {
+    padding-right: 0;
+    padding-left: 0;
+    h3 {
+      font-family: "Affogato";
+    }
+    .bottle-mobile {
+      margin-top: 40px;
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      img {
+        width: 63%;
+        margin-top: -72px;
+        z-index: 2;
+      }
+    }
+    .property1-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .property2-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+    .property3-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 109%;
+      }
+    }
+    .property4-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 109%;
+      }
+    }
+    .property5-nozzle-bottle {
+      margin-top: 40px;
+      padding: 0 20px;
+      vertical-align: top;
+      width: 49%;
+      display: inline-block;
+      img {
+        width: 109%;
+      }
+      button {
+        background: #2d2866;
+        border: 0.842105px solid #2d2866;
+        box-sizing: border-box;
+        border-radius: 19px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 110px;
+        height: 32px;
+        font-family: "Affogato";
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.68px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .change-type {
+    width: 100%;
+    margin-bottom: 20px;
+    button {
+      position: relative;
+      text-align: left;
+      height: 45px;
+      margin-top: 70px;
+      width: 49%;
+      background: transparent;
+      border: 1px solid #5e5995;
+      box-sizing: border-box;
+      box-shadow: 0px 2px 4px rgba(206, 206, 206, 0.5);
+      border-radius: 8px;
+      color: #6963a2;
+      font-family: "Affogato";
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.68px;
+      text-transform: uppercase;
+      outline: none;
+      padding-left: 10px;
+      &:first-child {
+        margin-right: 3px;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(0, -50%);
+        width: 10px;
+      }
+    }
+  }
+}

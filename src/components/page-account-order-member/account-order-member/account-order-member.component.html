@@ -1,0 +1,29 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container account-order-member">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="account-order-member-container">
+        <div class="account-order-column customer-nav-column">
+          <customer-nav data-selected-link="'account'"></customer-nav>
+        </div>
+        <div class="account-order-column content-column">
+          <div class="account-order-title">ACCOUNT & ORDER HISTORY</div>
+          <div class="order-account-settings-section">
+            <account-settings></account-settings>
+          </div>
+          <div class="account-kids-settings-section">
+            <kids-settings></kids-settings>
+          </div>
+          <div class="order-history-section">
+            <order-history
+                    data-history-list="historyList"
+                    data-show-pagination="true"
+                    data-load-more="loadMoreHistory()"
+                    data-total-count="totalHistoryCount"></order-history>
+          </div>
+        </div>
+      </div>
+      <img class="account-bg-image" src="/img/account-order-bd.png"/>
+    </div>
+  </div>
+</div>

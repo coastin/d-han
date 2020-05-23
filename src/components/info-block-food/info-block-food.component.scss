@@ -1,0 +1,89 @@
+.fda-food {
+  position: relative;
+  margin-bottom: 60px;
+  @include breakpoint(md) {
+    margin-bottom: 120px;
+  }
+  .fda-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .fda-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+    .material-text {
+      h1 {
+        padding-top: 1%;
+        color: #44a0e0;
+        @include breakpoint(lg) {
+          padding-top: 5%;
+        }
+        @include breakpoint(xl) {
+          padding-top: 23%;
+        }
+        @include breakpoint(xxl) {
+          padding-top: 40%;
+        }
+      }
+      p {
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        @include breakpoint(lg) {
+          margin: 0;
+        }
+      }
+      img {
+        margin-top: 0px;
+        width: 70px;
+        @include breakpoint(lg) {
+          margin-top: 25px;
+          width: 90px;
+        }
+        @include breakpoint(xl) {
+          margin-top: 55px;
+          width: 130px;
+        }
+      }
+    }
+  }
+  .fda-description-mobile {
+    position: relative;
+    display: block;
+    @include breakpoint(md) {
+      display: none;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    h1 {
+      color: #44a0e0;
+    }
+    .fda-background-mobile {
+      display: block;
+      @include breakpoint(md) {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

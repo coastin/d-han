@@ -1,0 +1,179 @@
+.cart-checkout {
+  overflow: hidden;
+  line-height: 1.428;
+  background-color: #fff;
+  min-height: 100vh;
+  .cart-checkout-container {
+    padding: 40px 20px 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) {
+      padding: 60px 0 0 0;
+    }
+    @include breakpoint(xl) {
+      flex-direction: row;
+      padding: 60px 0 80px 0;
+    }
+    @include breakpoint(xxl) {
+      left: 35px;
+    }
+  }
+
+  .cart-checkout-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+    &:first-child {
+      flex-basis: 100px;
+    }
+  }
+
+  .cart-title {
+    color: #2d2866;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-right: 35px;
+    @include breakpoint(md) {
+      font-size: 48px;
+      font-weight: 900;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .cart-section-title {
+    color: #2d2866;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 20px;
+    @include breakpoint(md) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+  }
+
+  .cart-order {
+    position: relative;
+    padding-top: 30px;
+    .cart-order-bg {
+      position: absolute;
+      opacity: 0.3;
+      right: -300px;
+      top: 490px;
+      width: 420px;
+      display: none;
+      @include breakpoint(xl) {
+        display: inline-block;
+      }
+    }
+    order-summary {
+      position: relative;
+      z-index: 10;
+    }
+    @include breakpoint(xl) {
+      padding-top: 140px;
+    }
+  }
+
+  .cart-checkout-shipping-form {
+    .cart-form-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &.cart-form-row-notes {
+        padding-top: 15px;
+      }
+      @include breakpoint(md) {
+        flex-direction: row;
+        padding-right: 45px;
+      }
+    }
+    .cart-form-column {
+      flex-grow: 1;
+      flex-basis: 0;
+      &.cart-form-column-left {
+        @include breakpoint(md) {
+          padding-right: 45px;
+        }
+      }
+      &.cart-form-column-right{
+        @include breakpoint(md) {
+          padding-left: 45px;
+        }
+      }
+    }
+  }
+  .cart-payment-card {
+    display: none;
+    padding-left: 30px;
+    padding-top: 38px;
+    font-family: 'Duru Sans', sans-serif;
+    img {
+      width: 255px;
+    }
+    .cart-payment-card-content {
+      position: relative;
+    }
+    .cart-payment-card-name {
+      width: 145px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.27px;
+      color: #4d5667;
+    }
+    .cart-payment-card-number {
+      width: 210px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: absolute;
+      top: 63px;
+      left: 20px;
+      color: #4d5667;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.42px;
+    }
+    .cart-payment-card-date {
+      width: 40px;
+      position: absolute;
+      white-space: nowrap;
+      overflow: hidden;
+      bottom: 45px;
+      left: 130px;
+      color: #4d5667;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.25px;
+    }
+    .cart-payment-card-date-text {
+      position: absolute;
+      bottom: 40px;
+      left: 110px;
+      width: 20px;
+      color: #4d5667;
+      font-size: 5px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+      line-height: 10px;
+    }
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+  .cart-form-section-payment {
+    padding-top: 20px;
+    @include breakpoint(md) {
+      padding-top: 25px;
+    }
+  }
+}
+

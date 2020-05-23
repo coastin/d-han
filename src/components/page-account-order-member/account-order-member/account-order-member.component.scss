@@ -1,0 +1,100 @@
+.account-order-member {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.428;
+  background-color: #fff;
+  min-height: 100vh;
+  padding-bottom: 60px !important;
+  @include breakpoint(md) {
+    padding-bottom: 0 !important;
+  }
+  .account-order-member-container {
+    padding: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) {
+      padding: 60px 0 0 0;
+    }
+    @include breakByWidth(1025px) {
+      flex-direction: row;
+      padding: 60px 0 40px 20px;
+    }
+    @include breakpoint(xl) {
+      flex-direction: row;
+      padding: 60px 95px 100px 50px;
+    }
+  }
+
+  .account-order-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    &.customer-nav-column {
+      flex-grow: 0;
+      display: none;
+      @include breakByWidth(1025px) {
+        flex-basis: 260px;
+        min-width: 260px;
+        display: block;
+      }
+      @include breakpoint(xl) {
+        flex-basis: 300px;
+        min-width: 300px;
+      }
+    }
+    &.content-column {
+      width:  100%;
+      @include breakByWidth(1025px) {
+        width: calc(100% - 300px);
+      }
+    }
+  }
+
+  .account-order-title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .account-section-title {
+    padding-top: 30px;
+    color: #000000;
+    border-bottom: 2px solid #97979794;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.68px;
+    text-transform: uppercase;
+    @include breakpoint(md) {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.15px;
+    }
+  }
+
+  .account-bg-image {
+    display: none;
+    width: 363px;
+    position: absolute;
+    top: -227px;
+    left: -154px;
+    opacity: 0.2;
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+
+  .order-account-settings-section {
+    padding-top: 20px;
+  }
+
+  .order-history-section {
+    padding-top: 70px;
+  }
+
+  .account-kids-settings-section {
+    padding-top: 70px;
+  }
+}
+

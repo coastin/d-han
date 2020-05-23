@@ -1,0 +1,114 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container benefits">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="benefits-container">
+        <div class="benefits-column customer-nav-column">
+          <customer-nav data-selected-link="'benefits'"></customer-nav>
+        </div>
+        <div class="benefits-column content-column">
+          <div class="benefits-column-title">Kidztime Benefits</div>
+          <div class="benefits-section">
+            <div class="benefits-section-title">Free Straw Replacements</div>
+            <div class="benefits-description">
+              <p>Mould and bacteria can build up in junior’s bottle over time!<br> Kidztime recommends to change the straw of your child’s bottle every 2-3 months tops.</p>
+              <p>With purchase of Kidztime’s sipper or straw bottles, you would automatically be entitled to a free straw anytime. Simple contact us for a free replacement straw to be sent to you.</p>
+            </div>
+            <div class="benefits-form">
+              <div class="benefits-form-row">
+                <div class="benefits-form-column form-column-left">
+                  <cart-input
+                          data-title="'First name'"
+                          data-required="true"
+                          data-model="benefitForm.firstName"></cart-input>
+                  <cart-input
+                          data-title="'Last name'"
+                          data-required="true"
+                          data-model="benefitForm.lastName"></cart-input>
+                  <cart-input
+                          data-title="'Phone Number'"
+                          data-required="true"
+                          data-model="benefitForm.phone"></cart-input>
+                  <div class="benefits-form-selector desktop">
+                    <div class="field-title">Bottle model</div>
+                    <div class="selector-items">
+                      <div class="selector-item"
+                           data-ng-repeat="bottle in bottleModels"
+                           data-ng-click="benefitForm.selectedBottleId = bottle.id"
+                           data-ng-class="{ selected: benefitForm.selectedBottleId === bottle.id }">
+                        <img ng-src="{{bottle.img}}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits-form-column form-column-right">
+                  <cart-input
+                          data-title="'E-mail'"
+                          data-required="true"
+                          data-model="benefitForm.email"
+                          data-type="'email'"></cart-input>
+                  <cart-input
+                          data-title="'Delivery Address'"
+                          data-required="true"
+                          data-model="benefitForm.address"></cart-input>
+                  <cart-input
+                          data-title="'Postal code'"
+                          data-required="true"
+                          data-model="benefitForm.postalCode"></cart-input>
+                  <cart-input
+                          style="width: 100%"
+                          data-title="'Remark'"
+                          data-required="true"
+                          data-model="benefitForm.remark"
+                          data-mode="'textarea'"></cart-input>
+                  <div class="benefits-form-selector mobile">
+                    <div class="field-title">Bottle model</div>
+                    <div class="selector-items">
+                      <div class="selector-item"
+                           data-ng-repeat="bottle in bottleModels"
+                           data-ng-click="benefitForm.selectedBottleId = bottle.id"
+                           data-ng-class="{ selected: benefitForm.selectedBottleId === bottle.id }">
+                        <img ng-src="{{bottle.img}}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="benefits-form-row">
+                <button class="benefits-submit"
+                        data-ng-click="submitBenefitForm()">Send Request</button>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-section section-redemption">
+            <div class="benefits-section-title">Kidztime Redemptions</div>
+            <div class="benefits-description">
+              <p>Received a Kidztime’s Voucher? Key in the voucher to redeem your rewards!<br>
+                Product redemption will be sent to your account’s registered address by postal mail while voucher redemption will be sent to your email address. </p>
+              <p>Do note that vouchers are one time use only. Terms & conditions applied</p>
+            </div>
+            <div class="benefits-form">
+              <div class="benefits-form-row">
+                <div class="benefits-form-column form-column-left">
+                  <div class="benefits-voucher">
+                    <div class="benefits-voucher-title">Voucher Code</div>
+                    <div class="benefits-voucher-field">
+                      <div class="benefits-voucher-content">{{voucherCode}}</div>
+                      <div class="benefits-voucher-button" data-ng-click="executeRedeem">Redeem!</div>
+                    </div>
+                  </div>
+                  <div class="redemption-card">
+                    <img src="/img/redemption-card.png">
+                  </div>
+                </div>
+                <div class="benefits-form-column form-column-right">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="benefits-bg-image" src="/img/account-order-bd.png"/>
+    </div>
+  </div>
+</div>

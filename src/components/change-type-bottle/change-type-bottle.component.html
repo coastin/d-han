@@ -1,0 +1,318 @@
+<div class="app-wrapper">
+  <section
+    class="change-type-sport-bottle-desktop"
+    ng-show="activeView === 'sport'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="ui column container grid">
+          <button class="classic-sipper-bottle" ng-click="changeView('sipper')">
+            <img src="img/clasic-shipper-buttle.png" />
+          </button>
+          <button class="classic-nozzle-bottle" ng-click="changeView('nozzle')">
+            <img src="img/button-close-pink.png" />
+          </button>
+          <button class="sport-bottle-active">
+            <img src="img/sport-bottle-active.png" />
+            <div class="title">
+              <h2>Why Kidztime LITTLE CHAMPION SPORTs Bottles?</h2>
+            </div>
+          </button>
+        </div>
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="material-bottle">
+              <img src="img/icon-material-sport-bottle.png" />
+              <h3>Rough’it out!</h3>
+              <p>
+                Made with Korean Ecozen Material, KIDZTIME Little Champion
+                Bottles are stronger, tougher & made to handle rough & tumble
+                play. Truly a bottle for champions.
+              </p>
+            </div>
+            <div class="flexible-bottle">
+              <img src="img/icon-flexible-sport-bottle.png" />
+              <h3>Best of both caps</h3>
+              <p>
+                Flexible as it is sporty, our Little Champion Bottles are coming
+                to you in both nozzle and straw sipper options!
+              </p>
+            </div>
+            <div class="rough-bottle">
+              <img src="img/icon-rough-sport-bottle.png" />
+              <h3>Sports grip</h3>
+              <p>
+                Rough play must come with tough grips. Guard against sweaty palm
+                and accidental bottle slips with KIDZTIME Little Champion’s
+                rubberized sports grip and sports handle.
+              </p>
+            </div>
+            <div class="replacement-bottle">
+              <img src="img/icon-replacement-sport-bottle.png" />
+              <h3>Free Straw Replacement</h3>
+              <p>
+                Request for a free replacement straw anytime you want. Kidztime
+                recommends to replace your sipper straw once every 2-3months.
+              </p>
+              <button>request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="change-type-sport-bottle-mobile"
+    ng-show="activeView === 'sport'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <button class="sport-bottle">
+          <h2>Why Kidztime LITTLE CHAMPION SPORTs?</h2>
+        </button>
+        <div class="bottle-mobile">
+          <img src="img/bottle-type-mobile.png" />
+        </div>
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="material-bottle">
+              <img src="img/icon-material-sport-bottle.png" />
+              <h3>Rough’it out! with our toughest bottle.</h3>
+            </div>
+            <div class="flexible-bottle">
+              <img src="img/icon-flexible-sport-bottle.png" />
+              <h3>Availabel in nozzle or straw sippers.</h3>
+            </div>
+            <div class="rough-bottle">
+              <img src="img/icon-rough-sport-bottle.png" />
+              <h3>Sports grip.</h3>
+            </div>
+            <div class="replacement-bottle">
+              <img src="img/icon-replacement-sport-bottle.png" />
+              <h3>Free Straw Replacement.</h3>
+              <button>request</button>
+            </div>
+          </div>
+          <div class="change-type">
+            <button ng-click="changeView('sipper')">
+              Classic Sipper <img src="img/right-arrow.png" />
+            </button>
+            <button ng-click="changeView('nozzle')">
+              Classic Nozzle <img src="img/right-arrow.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="change-type-nozzle-bottle-desktop"
+    ng-show="activeView === 'nozzle'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="ui column container grid">
+          <button class="classic-sipper-bottle" ng-click="changeView('sipper')">
+            <img src="img/clasic-shipper-buttle.png" />
+          </button>
+          <button class="classic-nozzle-bottle-active">
+            <img src="img/classic-nozzle-bottle.png" />
+            <div class="title">
+              <h2>Why Kidztime Classic Nozzle Bottles?</h2>
+            </div>
+          </button>
+          <button class="sport-bottle" ng-click="changeView('sport')">
+            <img src="img/classic-sport-bottle.png" />
+          </button>
+        </div>
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="property1-nozzle-bottle">
+              <img src="img/property1-nozzle-bottle.png" />
+              <h3>The Big Kids’ Bottle</h3>
+              <p>
+                Bottles are for the litte grown-ups. Bigger capacity, bottle
+                lock against accidental spill and more!
+              </p>
+            </div>
+            <div class="property2-nozzle-bottle">
+              <img src="img/property2-nozzle-bottle.png" />
+              <h3>Classic look, world class material.</h3>
+              <p>
+                Best in class thermoplastic material and sturdy construction.
+                Built for the roughest handling.
+              </p>
+            </div>
+            <div class="property3-nozzle-bottle">
+              <img src="img/property3-nozzle-bottle.png" />
+              <h3>Mix & Match</h3>
+              <p>
+                Keep the fun going matching junior’s favourite bottles with caps
+                of different colours!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="change-type-nozzle-bottle-mobile"
+    ng-show="activeView === 'nozzle'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <button class="nozzle-bottle">
+          <h2>Why Nozzle on?</h2>
+        </button>
+
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="bottle-mobile">
+              <img src="img/nozzle-bottle-decor.png" />
+            </div>
+            <div class="property1-nozzle-bottle">
+              <img src="img/property1-nozzle-bottle.png" />
+              <h3>Larger capaity for the big kids.</h3>
+            </div>
+            <div class="property2-nozzle-bottle">
+              <img src="img/property2-nozzle-bottle.png" />
+              <h3>Larger capaity for the big kids.</h3>
+            </div>
+            <div class="property3-nozzle-bottle">
+              <img src="img/property3-nozzle-bottle.png" />
+              <h3>Mix & match for more colors!</h3>
+            </div>
+          </div>
+          <div class="change-type">
+            <button ng-click="changeView('sipper')">
+              Classic Sipper <img src="img/right-arrow.png" />
+            </button>
+            <button ng-click="changeView('sport')">
+              Little champion <img src="img/right-arrow.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="change-type-sipper-bottle-desktop"
+    ng-show="activeView === 'sipper'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="ui column container grid">
+          <button class="classic-sipper-bottle-active">
+            <img src="img/classic-sipper-open.png" />
+            <div class="title">
+              <h2>Why Kidztime Classic sipper?</h2>
+            </div>
+          </button>
+          <button
+            class="classic-nozzle-bottle-close"
+            ng-click="changeView('nozzle')"
+          >
+            <img src="img/classic-nozzle-close.png" />
+          </button>
+          <button class="sport-bottle" ng-click="changeView('sport')">
+            <img src="img/classic-sport-bottle.png" />
+          </button>
+        </div>
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="property1-nozzle-bottle">
+              <img src="img/property1-sipper-bottle.png" />
+              <h3>Ready for anything!</h3>
+              <p>
+                Sleek simple and sturdy. Kidztime Original Sippers are designed
+                for the modern parents - minimalistic, easy cleaning &
+                maintainance.
+              </p>
+            </div>
+            <div class="property2-nozzle-bottle">
+              <img src="img/property2-sipper-bottle.png" />
+              <h3>Classic look, world class material.</h3>
+              <p>
+                Best in class thermoplastic material and sturdy construction.
+                Built for the roughest handling.
+              </p>
+            </div>
+            <div class="property3-nozzle-bottle">
+              <img src="img/property3-sipper-bottle.png" />
+              <h3>Kids grow up fast</h3>
+              <p>
+                To match the growing needs of a growing child, Kidztime Original
+                Sipper comes in 2 capacity options.
+              </p>
+            </div>
+            <div class="property4-nozzle-bottle">
+              <img src="img/property4-sipper-bottle.png" />
+              <h3>Mix & Match</h3>
+              <p>Mix & Match the bottle cap and body.</p>
+            </div>
+            <div class="property5-nozzle-bottle">
+              <img src="img/property5-sipper-bottle.png" />
+              <h3>Free Straw Replacement</h3>
+              <p>
+                Request for a free replacement straw anytime you want. Kidztime
+                recommends to replace your sipper straw once every 2-3months.
+              </p>
+              <button>request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="change-type-sipper-bottle-mobile"
+    ng-show="activeView === 'sipper'"
+  >
+    <div class="wrapper">
+      <div class="main-container">
+        <button class="sipper-bottle">
+          <h2>why classic sipper?</h2>
+        </button>
+        <div class="ui column container grid">
+          <div class="bottle-description">
+            <div class="bottle-mobile">
+              <img src="img/sipper-decor.png" />
+            </div>
+            <div class="property1-nozzle-bottle">
+              <img src="img/property1-sipper-bottle.png" />
+              <h3>Sleek, simple, sturdy.</h3>
+            </div>
+            <div class="property2-nozzle-bottle">
+              <img src="img/property2-sipper-bottle.png" />
+              <h3>Classic look, world class material.</h3>
+            </div>
+            <div class="property3-nozzle-bottle">
+              <img src="img/property3-sipper-bottle.png" />
+              <h3>Comes in 2 size options.</h3>
+            </div>
+            <div class="property4-nozzle-bottle">
+              <img src="img/property4-sipper-bottle.png" />
+              <h3>Mix & match for more colors!</h3>
+            </div>
+            <div class="property5-nozzle-bottle">
+              <img src="img/property5-sipper-bottle.png" />
+              <h3>Free Straw Replacement.</h3>
+              <button>request</button>
+            </div>
+          </div>
+          <div class="change-type">
+            <button ng-click="changeView('nozzle')">
+              Classic Nozzle <img src="img/right-arrow.png" />
+            </button>
+            <button ng-click="changeView('sport')">
+              Little champion <img src="img/right-arrow.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

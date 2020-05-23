@@ -1,0 +1,57 @@
+<div class="app-wrapper">
+    <section class="filter-bag-to-school">
+        <div class="wrapper">
+            <div class="main-container">
+                <div class="ui grid container filter-items">
+                    <div class="group1">
+                        <button class=" active">Kidztime School</button>
+                    </div>
+                    <div class="group1">
+                        <button>Kidztime Air</button>
+                    </div>
+                    <div class="group1">
+                        <button>Kidztime Enrichment</button>
+                    </div>
+                </div>
+                <div class="ui grid container filter-items-mobile">
+                    <div class="group1">
+                        <button class=" active">School</button>
+                    </div>
+                    <div class="group1">
+                        <button>Air</button>
+                    </div>
+                    <div class="group1">
+                        <button>Enrichment</button>
+                    </div>
+                </div>
+                <div class="ui grid container filter-contend">
+                    <div class="filter-contend-block" ng-repeat="product in products">
+                        <div class="block-img">
+                            <div class="favorite"><img src="img/icon-favorite.png" /></div>
+                            <div class="brand"><img ng-src="{{product.brandImg}}" /></div>
+                            <div class="slingBag"><img ng-src="{{product.img}}" /></div>
+                        </div>
+                        <div class="block-description">
+                            <div class="name"><p>{{product.title}}</p></div>
+                            <div class="price"><p>{{product.price}}</p></div>
+                            <button>+ add to cart</button>
+                            <div class="patern1"><img src="img/pattern2.png" /></div>
+                            <div class="patern2"><img src="img/pattern1.png" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui fluid container layer load-more-container">
+                    <div class="button-load-more">
+                        <div class="yellow-small"></div>
+                        <div class="yellow-medium"></div>
+                        <div class="yellow-big"></div>
+                        <button ng-click="loadMore()">load more</button>
+                        <div class="yellow-big"></div>
+                        <div class="yellow-medium"></div>
+                        <div class="yellow-small"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

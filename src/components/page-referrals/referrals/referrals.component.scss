@@ -1,0 +1,271 @@
+.referrals {
+  overflow: hidden;
+  line-height: 1.428;
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+  &.main-container {
+    @include breakpoint(md) {
+      padding: 0 50px 0 50px;
+    }
+    @include breakByWidth(1025px) {
+      padding: 0 2% 0 2%;
+    }
+  }
+  .referrals-container {
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(md) {
+      padding: 60px 0 0 0;
+    }
+    @include breakByWidth(1025px) {
+      flex-direction: row;
+      padding: 60px 0 0 20px;
+    }
+    @include breakpoint(xl) {
+      flex-direction: row;
+      padding: 60px 95px 0 50px;
+    }
+  }
+
+  .referrals-column {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    &.customer-nav-column {
+      flex-grow: 0;
+      display: none;
+      @include breakByWidth(1025px) {
+        flex-basis: 260px;
+        min-width: 260px;
+        display: block;
+      }
+      @include breakpoint(xl) {
+        flex-basis: 300px;
+        min-width: 300px;
+      }
+    }
+    &.content-column {
+      width:  100%;
+      @include breakByWidth(1025px) {
+        width: calc(100% - 300px);
+      }
+    }
+  }
+
+  .referrals-title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .referrals-section-title {
+    padding-top: 30px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    border-bottom: 2px solid #97979794;
+    padding-bottom: 10px;
+    @include breakpoint(md) {
+
+    }
+  }
+
+  .referrals-bg-image {
+    display: none;
+    width: 363px;
+    position: absolute;
+    top: -227px;
+    left: -154px;
+    opacity: 0.2;
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+
+  .referrals-info {
+    text-align: center;
+    position: relative;
+    .referrals-image-container {
+      @include breakpoint(md) {
+        position: absolute;
+        bottom: -475px;
+        left: 420px;
+      }
+      @include breakpoint(xxl) {
+        left: 660px;
+      }
+      .referrals-image {
+        &.mobile {
+          width: 164px;
+          @include breakpoint(md) {
+            display: none;
+          }
+        }
+        &.desktop {
+          display: none;
+          @include breakpoint(md) {
+            width: 260px;
+            display: inline-block;
+          }
+          @include breakByWidth(900px) {
+            width: 339px;
+          }
+        }
+      }
+      .referrals-image-text {
+        width: 267px;
+        margin: 0 auto;
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: none;
+        line-height: 30px;
+        @include breakpoint(md) {
+          display: block;
+        }
+      }
+    }
+    .referrals-description {
+      padding-top: 20px;
+      color: #000000;
+      text-align: left;
+      p {
+        max-width: 850px;
+        font-family: Affogato;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        line-height: 18px;
+        @include breakpoint(md) {
+          font-size: 22px;
+          font-weight: 500;
+          margin-bottom: 25px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  .referrals-options {
+    padding-bottom: 100px;
+
+    @include breakpoint(md) {
+      width: 400px;
+    }
+    @include breakpoint(xxl) {
+      width: 600px;
+    }
+    .cart-input-title {
+      padding-left: 10px;
+      color: #000;
+      letter-spacing: 0.13px;
+      padding-bottom: 3px;
+      @include breakpoint(md) {
+        font-size: 16px;
+        padding-top: 8px;
+      }
+    }
+    .referrals-option-container {
+      margin-top: 40px;
+      .referrals-option-email {
+        .cart-input {
+          @include breakpoint(md) {
+            width: 345px;
+          }
+        }
+      }
+    }
+    .referrals-option-title {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.11px;
+      color: #000000;
+      @include breakpoint(md) {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.15px;
+      }
+    }
+    .referrals-personal-link {
+      position: relative;
+      .link-title {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.13px;
+        line-height: 24px;
+        padding-left: 10px;
+        padding-bottom: 4px;
+        @include breakpoint(md) {
+          font-size: 16px;
+          padding-bottom: 8px;
+          padding-top: 6px;
+        }
+      }
+      .link-field {
+        width: 100%;
+        height: 40px;
+        border-radius: 100px;
+        background-color: #eff0f4;
+        color: grey;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        line-height: 20px;
+        padding-top: 9px;
+        padding-left: 17px;
+        @include breakpoint(md) {
+          font-size: 16px;
+          font-weight: 500;
+          width: 332px;
+        }
+      }
+      .link-copy-btn {
+        margin-top: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 40px;
+        border-radius: 33px;
+        background-color: #2d2866;
+        font-family: Affogato;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        color: #fff;
+        @include breakpoint(md) {
+          width: 120px;
+          position: absolute;
+          bottom: 0;
+          left: 211px;
+        }
+      }
+    }
+    .referrals-invite-btn {
+      cursor: pointer;
+      outline: none;
+      border: none;
+      width: 100%;
+      height: 40px;
+      border-radius: 33px;
+      background-color: #2d2866;
+      color: #ffffff;
+      font-family: "Affogato";
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.25px;
+      line-height: 20px;
+      text-align: center;
+      @include breakpoint(md) {
+        height: 30px;
+        width: 120px;
+      }
+    }
+  }
+}
+

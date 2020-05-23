@@ -1,0 +1,166 @@
+.poster-carausel {
+  //height: 100vh;
+  //padding-top: 50px;
+
+  position: relative;
+  padding-bottom: 160%;
+  @include breakpoint(md) {
+    padding-bottom: 42.7%;
+  }
+  ul {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .carausel-slide {
+    background-color:#f3f6ff;
+    height: 100%;
+  }
+  .carausel-slide-content {
+    position: relative;
+    padding-top: 10px;
+    img {
+      width: 100%;
+    }
+    @include breakpoint(md) {
+      padding-top: 45px;
+    }
+  }
+  .carausel-controls {
+    display: none;
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+  .carausel-controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 50px);
+    transform: translate(0, -50%);
+    .carausel-control-content {
+      position: relative;
+    }
+  }
+  .slide-poster-desktop {
+    display: none;
+    @include breakpoint(md) {
+      display: inline-block;
+    }
+  }
+  .slide-poster-mobile {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+  .slide-info-container {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include breakpoint(sm) {
+      top: 70px;
+    }
+    @include breakpoint(md) {
+      top: 30%;
+    }
+    .column {
+      position: static !important;
+    }
+  }
+  .slide-info-title {
+    line-height: 1.2;
+    color: #44a0e0;
+    font-size: 33px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 30px 0 10px;
+    position: relative;
+    top: -20px;
+    @include breakpoint(lg) {
+      font-size: 40px;
+      padding: 0 70px 0 20px;
+      top: 0;
+    }
+    @include breakpoint(xl) {
+      font-size: 50px;
+      padding: 0 110px 0 40px;
+    }
+  }
+  .slide-info-description {
+    line-height: 1.2;
+    margin-top: 27px;
+    color: #000000;
+    font-size: 31px;
+    font-weight: 900;
+    padding: 0 20px 30px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include breakpoint(md) {
+      position: static;
+      padding: 0 30px 0 10px;
+    }
+    @include breakpoint(lg) {
+      padding: 0 70px 0 20px;
+    }
+    @include breakpoint(xl) {
+      font-size: 40px;
+      padding: 0 110px 0 40px;
+    }
+  }
+  .carausel-control {
+    width: 58px;
+    height: 85px;
+    display: inline-block;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    &.carausel-control-right {
+      right: 0;
+      background-image: url('/img/carausel-right-button.png');
+    }
+    &.carausel-control-left {
+      left: 0;
+      background-image: url('/img/carausel-left-button.png');
+    }
+  }
+}
+
+.carausel-indicators {
+  position: relative;
+  height: 75px;
+  text-align: center;
+  background-color: #fcfcfc;
+  @include breakpoint(sm) {
+    height: 130px;
+  }
+  .rn-carousel-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+  }
+  .rn-carousel-indicator > span {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: solid #5e5896;
+    border-radius: 50%;
+    color: transparent !important;
+    margin: 0 18px;
+    &.active {
+      background: #5e5896;
+      box-shadow: 0px 2px 4px rgba(10,0,83,0.5);
+    }
+  }
+}

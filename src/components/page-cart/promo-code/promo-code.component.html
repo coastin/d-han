@@ -1,0 +1,113 @@
+<div class="promo-code" data-ng-show="status === 'none'">
+  <div class="promo-code-wrapper">
+    <h3>Apply a promo code</h3>
+    <div class="apply-button">
+      <input type="text" name="promocode" placeholder=" HAPPY123" data-ng-model="promoCode"/>
+      <button data-ng-click="validatePromoCode()">Apply</button>
+    </div>
+    <h4>Terms & conditions of promo code:</h4>
+    <p>
+      Promo code discount are only applicable to non-discounted items,
+      accessories as well as bundle item excluding accessories
+    </p>
+  </div>
+</div>
+<div class="promo-code-mobile" data-ng-show="status === 'none'">
+  <div class="promo-code-wrapper">
+    <h3>Apply a promo code</h3>
+    <div class="apply-button">
+      <input type="text" name="promocode" placeholder=" HAPPY123" data-ng-model="promoCode"/>
+      <button data-ng-click="validatePromoCode()">Apply</button>
+    </div>
+    <p>
+      *T&C: Promo code discount are only applicable to non-discounted items,
+      accessories as well as bundle item excluding accessories
+    </p>
+  </div>
+</div>
+
+<div class="promo-code-apply" data-ng-show="status === 'valid'">
+  <div class="promo-code-apply-wrapper">
+    <h4>Promo code: {{promoCode}}</h4>
+    <p>
+      20% off your purchase of $40 or more or 15% off $20 or more. Not valid on
+      purchase of clearance and sales.
+    </p>
+    <div class="aplly-delete">
+      <div class="title">
+        <img src="img/promo-code-apply.png" />
+        <div class="text">
+          <p>Promo code is applied,</p>
+          <p>saving you $20 towards your order!</p>
+        </div>
+      </div>
+      <button data-ng-click="removeCode()">Remove code</button>
+    </div>
+  </div>
+</div>
+<div class="promo-code-apply-mobile" data-ng-show="status === 'valid'">
+  <div class="promo-code-apply-wrapper">
+    <h4>Promo code: {{promoCode}}</h4>
+    <p>
+      20% off your purchase of $40 or more or 15% off $20 or more. Not valid on
+      purchase of clearance and sales.
+    </p>
+    <div class="aplly-delete">
+      <div class="apllied-ok">
+        <img src="img/promocode-ok.png" />
+        <h3>Applied</h3>
+      </div>
+      <button data-ng-click="removeCode()">Remove code</button>
+    </div>
+  </div>
+  <div class="title">
+    <img src="img/promo-code-apply.png" />
+    <div class="text">
+      <p>Promo code is applied, saving you $20 towards your order!</p>
+    </div>
+  </div>
+</div>
+<div class="promo-code-not-applied" data-ng-show="status === 'invalid'">
+  <div class="promo-code-apply-wrapper">
+    <h4>Promo code: {{promoCode}}</h4>
+    <p>
+      20% off your purchase of $40 or more or 15% off $20 or more. Not valid on
+      purchase of clearance and sales.
+    </p>
+    <div class="aplly-delete">
+      <div class="title">
+        <div class="text">
+          <div class="not-apllied">
+            <img src="img/delete-promo-code.png" />
+            <h3>Not Applied</h3>
+          </div>
+          <p>Promo code is applied,</p>
+          <p>saving you $20 towards your order!</p>
+        </div>
+      </div>
+      <button data-ng-click="removeCode()">Remove code</button>
+    </div>
+  </div>
+</div>
+<div class="promo-code-not-applied-mobile" data-ng-show="status === 'invalid'">
+  <div class="promo-code-apply-wrapper">
+    <h4>Promo code: {{promoCode}}</h4>
+    <p>
+      20% off your purchase of $40 or more or 15% off $20 or more. Not valid on
+      purchase of clearance and sales.
+    </p>
+    <div class="aplly-delete">
+      <div class="title">
+        <div class="not-apllied">
+          <img src="img/delete-promo-code.png" />
+          <h3>Not Applied</h3>
+        </div>
+      </div>
+      <button data-ng-click="removeCode()">Remove code</button>
+    </div>
+  </div>
+  <h3>
+    This promo code is valid, but you'll need to add $20.00 of qualifying items
+    to your cart to use this offer.
+  </h3>
+</div>

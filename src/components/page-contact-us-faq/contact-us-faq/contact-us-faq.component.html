@@ -1,0 +1,70 @@
+<div class="app-wrapper">
+  <div class="wrapper">
+    <div class="main-container contact-us-faq">
+      <div class="header-cart-sales-discount">Bundle & Save Up To 30%</div>
+      <div class="contact-us-faq-container">
+        <div class="contact-us-faq-column customer-nav-column">
+          <customer-nav data-selected-link="'FAQ'"></customer-nav>
+        </div>
+        <div class="contact-us-faq-column content-column">
+          <div class="contact-us-faq-column-title">CONTACT US & FAQ</div>
+          <div class="contact-us-faq-section">
+            <div class="contact-us-faq-section-title">Contact Form</div>
+            <div class="contact-us-description">Have a question or feedback regarding our products, service or just about anything? Feel free to contact us via our contact form. We will get back to you as soon as possible :)</div>
+            <div class="contact-us-form">
+              <div class="contact-us-form-row">
+                <div class="contact-us-form-column form-column-left">
+                  <cart-input
+                          data-title="'First name'"
+                          data-required="true"
+                          data-model="contactForm.firstName"></cart-input>
+                  <cart-input
+                          data-title="'Last name'"
+                          data-required="true"
+                          data-model="contactForm.lastName"></cart-input>
+                </div>
+                <div class="contact-us-form-column form-column-right">
+                  <cart-input
+                          data-title="'E-mail'"
+                          data-required="true"
+                          data-model="contactForm.email"
+                          data-type="'email'"></cart-input>
+                  <cart-input
+                          data-title="'Phone Number'"
+                          data-required="true"
+                          data-model="contactForm.phone"></cart-input>
+                </div>
+              </div>
+              <div class="contact-us-form-row">
+                <cart-input
+                        style="width: 100%"
+                        data-title="'Remark'"
+                        data-required="true"
+                        data-model="accountForm.remark"
+                        data-mode="'textarea'"></cart-input>
+              </div>
+              <div class="contact-us-form-row">
+                <button class="contact-us-submit"
+                        data-ng-click="submitContactForm()">Send Request</button>
+              </div>
+            </div>
+          </div>
+          <div class="contact-us-faq-section section-questions">
+            <div class="contact-us-faq-section-title">Frequently Ask Question</div>
+            <div class="contact-us-questions-list">
+              <div class="contact-us-question">Can i do a refund or exchange for product bought online?</div>
+              <div class="contact-us-answer">Yes you can! We are able to do both refunds and replacements within 7 days of the delivery date as long as the product is new and unused. Please contact us directly</div>
+              <div class="contact-us-question">Items that are damaged after 7 days of the delivery</div>
+              <div class="contact-us-answer">Unfortunately for items received after 7 days of delivery, we are not able to provide any exchanges unless the damage is due to manufacturing defects. Please contact us direct anyway and we will see how we can assist</div>
+              <div class="contact-us-question">I bought the items from a retail shop or retailer and i would like to exchange or return </div>
+              <div class="contact-us-answer">Unfortunately for items bought from our retail and distribution partner, we are unable to provide any exchange or return. Our advise would be to bring back the merchadise to whichever retailer that you have purchased it from along with your receipt. The return policy would be based on those of the retailer.</div>
+              <div class="contact-us-question">How do I get my free straw replacement</div>
+              <div class="contact-us-answer">To get the free straw replacement, simpley login to your account and select on ‘Kidztime Benefit’ link that is listed under our customer support. From there, you just got to free up a simple form and voila! A free straw would be on the way to your doorsteps.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="account-bg-image" src="/img/account-order-bd.png"/>
+    </div>
+  </div>
+</div>

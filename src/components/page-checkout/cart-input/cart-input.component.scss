@@ -1,0 +1,53 @@
+.cart-input {
+
+  .cart-input-title {
+    position: relative;
+    color: #a8acb9;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 28px;
+    padding-left: 21px;
+    padding-bottom: 10px;
+    .cart-input-required {
+      position: absolute;
+      left: 11px;
+      top: 0;
+      color: #df4f6b;
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+      line-height: 28px;
+    }
+  }
+  .cart-input-field {
+    padding-bottom: 10px;
+    input {
+      width: 100%;
+      border-radius: 100px;
+      background-color: #eff0f4;
+      height: 42px;
+      color: #4f5362;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      border: none;
+      outline: none;
+      padding: 0 21px 0 21px;
+    };
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      background-color: #eff0f4;
+      height: 110px;
+      color: #4f5362;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 21px;
+      border: none;
+      outline: none;
+      padding: 10px 21px;
+      resize: none;
+    }
+  }
+}

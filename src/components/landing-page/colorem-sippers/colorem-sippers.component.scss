@@ -1,0 +1,122 @@
+.colorem-sippers {
+  width: 100%;
+  background: url("/img/color-em-desktop.png");
+  background-position: center;
+  background-size: cover;
+  margin: 20px 0;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_text {
+      position: relative;
+      right: -46px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 230px 0 131px;
+      max-width: 576px;
+      width: 100%;
+      &:not(.tablet) {
+        display: flex;
+        @media screen and (max-width: 768px){
+          .title {
+            width: auto;
+            height: auto;
+          }
+          .under-title, .shop-now {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px){
+          display: none;
+          .title {
+            display: none;
+          }
+        }
+      }
+      .title {
+        margin-bottom: 0;
+        text-align: center;
+        color: #000;
+        font-size: 26.2px;
+        line-height: 55px;
+
+        @include breakpoint(sm) {
+          font-weight: 900;
+          font-size: 60px;
+          line-height: 80px;
+        }
+      }
+      .under-title {
+        font-family: Oduda;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 8px;
+        br {
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+        @include breakpoint(md) {
+          margin-bottom: 84px;
+        }
+        @include breakpoint(sm) {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 32px;
+        }
+      }
+
+      .shop-now {
+        @include shopNow();
+      }
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px){
+          display: flex;
+          margin-bottom: 20px;
+          .title {
+            display: none;
+          }
+          .under-title .shop-now {
+            display: block;
+          }
+        }
+        @media screen and (max-width: 575px){
+          .title {
+            display: block;
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px){
+        max-width: 100%;
+        display: none;
+        padding: 22px 49px;
+        right: 0;
+      }
+      @media screen and (max-width: 575px){
+        padding: 0 49px;
+      }
+    }
+    &_right-bar {
+      @include breakByWidth(md) {
+        margin-right: 109px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 575px){
+          max-width: 350px;
+        }
+      }
+    }
+  }
+}
