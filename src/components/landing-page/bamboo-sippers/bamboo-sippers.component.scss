@@ -1,0 +1,16 @@
+.bamboo-sippers {
+  &__wrapper {
+    &_img {}
+    &_text {
+      &_title {}
+      &_under-title {}
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px){
+        }
+        @media screen and (max-width: 575px){
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.decorate-it {
+  background: url("/img/decorate-it-bg.png") no-repeat center #F4DB6C;
+  background-size: cover;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 72px 0 0 10px;
+    @media screen and (max-width: 768px) {
+      padding-top: 35px;
+    }
+    &_img{
+      display: flex;
+      align-items: flex-end;
+      max-width: 767px;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        position: relative;
+        right: -80px;
+        z-index: 2;
+        max-width: 570px;
+      }
+      @media screen and (max-width: 640px){
+        max-width: 470px;
+      }
+      @media screen and (max-width: 575px) {
+        max-width: 570px;
+        right: 0;
+      }
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      max-width: 575px;
+      min-width: 450px;
+      width: 100%;
+      padding-bottom: 98px;
+
+      &:not(.tablet) {
+        @media screen and (max-width: 768px) {
+          min-width: 0;
+          max-height: 0;
+          width: auto;
+          padding-bottom: 0;
+          .decorate-it__wrapper_text_under-title, .shop-now {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          max-width: 100%;
+          padding: 0;
+          margin-bottom: 20px;
+          .decorate-it__wrapper_text_title {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          .decorate-it__wrapper_text_title {
+            display: block;
+          }
+        }
+      }
+
+      &_title {
+        font-family: Affogato;
+        padding: 20px 30px;
+        background: #FFFFFF;
+        font-size: 56.65px;
+        line-height: 77px;
+        text-align: left;
+        color: #cd645c;
+        border-radius: 30px;
+        font-weight: 500;
+        box-shadow: 10px 10px 0px 1px #E4AA60;
+        transform: rotate(-5deg);
+
+        @media screen and (max-width: 768px){
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          max-width: 370px;
+          padding: 11px 20px;
+          font-size: 37px;
+          line-height: 46px;
+        }
+        @media screen and (max-width: 575px) {
+          font-family: Affogato;
+          font-weight: 900;
+          font-size: 26.2px;
+          line-height: 55px;
+          color: #000;
+          margin-bottom: 0;
+          position: static;
+          transform: none;
+          background: transparent;
+          padding: 0;
+          box-shadow: none;
+        }
+      }
+      &_under-title {
+        font-family: Oduda;
+        font-weight: normal;
+        font-size: 26.39px;
+        line-height: 29px;
+        text-align: center;
+        color: #000;
+        @media screen and (max-width: 768px){
+          font-size: 24.39px;
+        }
+        @media screen and (max-width: 575px) {
+          font-size: 10.2px;
+          line-height: 14px;
+        }
+      }
+      .shop-now {
+        @include shopNow();
+      }
+    }
+  }
+}
