@@ -1,140 +1,152 @@
-.classic-sipper-bottle{
-    padding: 20px 0;
-    background: url("/img/classic-sipper-desktop.png") no-repeat center #FBEED1;
-    background-size: cover;
+.stainless-steel-nozzles {
+  background: #F2EEEB;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
     margin-bottom: 0;
-    @media screen and (max-width: 575px){
-      background-position: 15% center;
-    }
-    @include breakpoint(md) {
-      margin-bottom: 20px;
-    }
-    &__wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-left: 238px;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    &_img {
       @media screen and (max-width: 768px){
-        padding-left: 180px;
+        position: absolute;
+        left: -80px;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        max-width: 468px;
       }
       @media screen and (max-width: 575px){
-        padding-left: 0;
+        left: 0;
       }
-      &_text {
-        position: relative;
-        z-index: 1;
-        max-width: 594px;
+      img {
         width: 100%;
-        &:not(.tablet) {
-          padding-top: 79px;
-          padding-left: 65px;
-          @media screen and (max-width: 768px){
-            .classic-sipper-bottle__wrapper_text_under-title, .shop-now {
-              display: none;
-            }
-          }
+        height: auto;
+      }
+      &:not(.mobile) {
+        @media screen and (max-width: 575px){
+          display: none;
+        }
+      }
+      &.mobile {
+        display: none;
+        @media screen and (max-width: 575px){
+          display: block;
+        }
+      }
+    }
+    &_text {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 810px;
+      width: 100%;
+      margin-left: -100px;
+      padding: 100px 20px 100px 0;
+      @media screen and (max-width: 768px){
+        padding: 75px 20px 75px 0;
+        margin-left: 0;
+        align-items: flex-end;
+      }
+      &_title {
+        max-width: 650px;
+        width: 100%;
+        font-family: Impact;
+        font-weight: normal;
+        font-size: 96.01px;
+        line-height: 97px;
+        text-align: right;
+        color: #626262;
+        margin-bottom: 0;
+        @media screen and (max-width: 768px){
+          font-size: 72.01px;
+          line-height: 71px;
+        }
+      }
+      &_under-title {
+        max-width: 466px;
+        width: 100%;
+        margin-left: auto;
+        font-family: Oduda;
+        font-weight: normal;
+        font-size: 23px;
+        text-align: left;
+        color: #a2a2a2;
+        margin-bottom: 0;
+        @media screen and (max-width: 768px){
+          font-size: 24.39px;
+          line-height: 32px;
+          text-align: center;
+          color: #000;
+          margin: 0 auto 30px;
+        }
+        @media screen and (max-width: 575px){
+          font-size: 10.2px;
+          line-height: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      &_under-title_img {
+        display: flex;
+        align-items: center;
+        max-width: 466px;
+        width: 100%;
+        margin-left: auto;
+        @media screen and (max-width: 768px){
+          max-width: initial;
+          width: auto;
+        }
+        img {
+          max-width: 197px;
+          width: 100%;
+          height: auto;
           @media screen and (max-width: 575px){
+            max-width: 110px;
+          }
+        }
+      }
+      &:not(.tablet) {
+        @media screen and (max-width: 768px){
+          .stainless-steel-nozzles__wrapper_text_under-title, .shop-now {
             display: none;
           }
         }
-        &.tablet {
-          display: none;
-          @media screen and (max-width: 768px){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 100%;
-            margin-bottom: 20px;
-            .classic-sipper-bottle__wrapper_text_title {
-              display: none;
-            }
-          }
-          @media screen and (max-width: 575px){
-            .classic-sipper-bottle__wrapper_text_title {
-              display: block;
-            }
-          }
-        }
-        &_title {
-          font-family: Affogato;
-          font-weight: 900;
-          font-size: 26.2px;
-          line-height: 55px;
-          text-align: left;
-          color: #000;
-          margin-bottom: 0;
-          @include breakpoint(sm) {
-            font-weight: 900;
-            font-size: 60px;
-            line-height: 55px;
-            margin-bottom: 12px;
-          }
-        }
-        &_under-title {
-          font-family: Oduda;
-          font-weight: normal;
-          font-size: 10px;
-          line-height: 14px;
-          text-align: center;
-          color: #000;
-          padding: 0 30px;
-          br {
-            @media screen and (max-width: 768px){
-              display: none;
-            }
-          }
-          @include breakpoint(md) {
-            margin-bottom: 97px;
-            padding: 0;
-            text-align: left;
-          }
-          @include breakpoint(sm) {
-            font-size: 24px;
-            line-height: 32px;
-            margin-bottom: 28px;
-          }
-        }
-        .shop-now {
-          @include shopNow();
-          margin-left: 0;
-          @include breakpoint(md) {
-            margin-left: 46px;
+        @media screen and (max-width: 575px){
+          .stainless-steel-nozzles__wrapper_text_title {
+            max-width: 270px;
+            font-size: 40.01px;
+            line-height: 41px;
           }
         }
       }
-      &_img {
-        max-width: 520px;
-        width: 100%;
-        @media screen and (max-width: 767px){
-          max-width: 382px;
+
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px){
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin-bottom: 20px;
+          .stainless-steel-nozzles__wrapper_text_title {
+            display: none;
+          }
+          .stainless-steel-nozzles__wrapper_text_under-title {
+
+          }
         }
         @media screen and (max-width: 575px){
-          max-width: 300px;
-        }
-        img {
-          width: 100%;
-          height: auto;
+          .stainless-steel-nozzles__wrapper_text_title {
+            display: block;
+            font-weight: normal;
+            font-size: 26.2px;
+            line-height: 55px;
+            text-align: center;
+            color: #000;
+          }
         }
       }
     }
   }
-  @media (min-width: 320px) and (max-width: 575px) {
-    //.classic-sipper-bottle{
-    //    background: url("/img/classic-sipper-mobile.png") no-repeat center;
-    //}
-  }
-  @media (min-width: 576px) and (max-width: 768px) {
-    .classic-sipper-bottle{
-        background: url("/img/classic-sipper-tablet.png") no-repeat center;
-        height: 473px;
-    }
-    #tablet-content{
-        margin-left: -150px;
-    }
-    .classic-sipper-bottle__wrapper_img img {
-        width: 100%;
-        height: auto;
-        margin-left: -150px;
-        margin-top: 70px;
-    }
-  }
+}

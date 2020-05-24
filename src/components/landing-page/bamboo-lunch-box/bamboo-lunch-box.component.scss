@@ -1,323 +1,156 @@
-.bamboo-lunch-box {
-	background: url("/img/Bamboo_Lunch_Box-desk.png") no-repeat center;
-    margin-bottom: 20px;
-    max-height: 677px;
-    height: 100%;
-}
-@media (min-width: 320px) and (max-width: 575px) {
-	.bamboo-lunch-box {
-        margin-bottom: 0;
-        background: url("/img/Bamboo_Lunch_Box-mob.png") no-repeat center;
-        max-height: 376px;
-        height: 100%;
-    }
-    .bamboo-lunch-box__wrapper_img{
-        margin-top: -150px;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 768px) {
-	.bamboo-lunch-box {
-        margin-bottom: 0;
-        background: url("/img/Bamboo_Lunch_Box-tabl.png") no-repeat center;
-        max-height: 474px;
-        height: 100%;
-    }
-    .bamboo-lunch-box__wrapper_img{
-        margin-top: -100px;
-        margin-left: 100px;
-    }
-
-}
-
-.bamboo-lunch-box__wrapper {
-	display: flex;
-	justify-content: center;
-}
-
-.bamboo-lunch-box__wrapper_img {
+.bamboo-lunch {
+  background: url("/img/Bamboo_Lunch_Box-desk.png") no-repeat center;
+  margin-bottom: 20px;
+  @media screen and (max-width: 768px){
+    margin-bottom: 0;
+  }
+  &__wrapper {
     display: flex;
-    height: 677px;
-	align-items: center;
-	max-width: 436px;
-	width: 100%;
-	padding-top: 15px;
-}
-
-@media screen and (max-width: 768px) {
-	.bamboo-lunch-box__wrapper_img {
-		max-width: 348px;
-	}
-}
-
-@media screen and (max-width: 575px) {
-	.bamboo-lunch-box__wrapper_img {
-		max-width: 287px;
+    justify-content: center;
+    &_img {
+      display: flex;
+      align-items: center;
+      max-width: 827px;
+      width: 100%;
+      padding-top: 15px;
+      @media screen and (max-width: 768px){
+        max-width: 490px;
+      }
+      @media screen and (max-width: 575px){
+        max-width: 375px;
+      }
+      img {
+        height: auto;
+      }
     }
+    &_text {
+      position: relative;
+      left: -13px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 550px;
+      width: 100%;
+      margin-left: -55px;
+      padding: 244px 0 133px;
 
-}
+      &:not(.tablet) {
+        max-width: inherit;
+        @media screen and (max-width: 768px) {
+          .bamboo-lunch__wrapper_text_under-title, .shop-now {
+            display: none;
+          }
+          .bamboo-lunch__wrapper_text_title {
+            max-width: 245px;
+            padding: 0;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
 
-.bamboo-lunch-box__wrapper_img img {
-	width: 100%;
-	height: auto;
-}
+      &.tablet {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: flex;
+          max-width: 100% ;
+          left: 0;
+          margin: 0 0 20px 0;
+          padding: 0 50px;
+          .bamboo-lunch__wrapper_text_title {
+            display: none;
+          }
+          .bamboo-lunch__wrapper_text_under-title {
+            padding: 0;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+          .bamboo-lunch__wrapper_text_under-title .shop-now {
+            display: block;
+          }
+        }
+        @media screen and (max-width: 575px) {
+          .bamboo-lunch__wrapper_text_title,
+          .bamboo-lunch__wrapper_text_under-title {
+            display: block;
+          }
+        }
+      }
 
-.bamboo-lunch-box__wrapper_text {
-	position: relative;
-	left: -13px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	max-width: 550px;
-	width: 100%;
-	margin-left: -55px;
-	padding: 244px 0 133px;
-}
-
-.bamboo-lunch-box__wrapper_text:not(.tablet) {
-	max-width: inherit;
-}
-
-@media screen and (max-width: 768px) {
-	.bamboo-lunch-box__wrapper_text:not(.tablet) .bamboo-lunch-box__wrapper_text_under-title, .bamboo-lunch-box__wrapper_text:not(.tablet) .shop-now {
-		display: none;
-	}
-
-	.bamboo-lunch-box__wrapper_text:not(.tablet) .bamboo-lunch-box__wrapper_text_title {
-		max-width: 245px;
-		padding: 0;
-	}
-}
-
-@media screen and (max-width: 575px) {
-	.bamboo-lunch-box__wrapper_text:not(.tablet) {
-		display: none;
-	}
-}
-
-.bamboo-lunch-box__wrapper_text.tablet {
-	display: none;
-}
-
-@media screen and (max-width: 768px) {
-	.bamboo-lunch-box__wrapper_text.tablet {
-		display: flex;
-		max-width: 100%;
-		left: 0;
-		margin: 0 0 20px 0;
-		padding: 0 50px;
-	}
-
-	.bamboo-lunch-box__wrapper_text.tablet .bamboo-lunch-box__wrapper_text_title {
-		display: none;
-	}
-
-	.bamboo-lunch-box__wrapper_text.tablet .bamboo-lunch-box__wrapper_text_under-title {
-		padding: 0;
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.bamboo-lunch-box__wrapper_text.tablet .bamboo-lunch-box__wrapper_text_under-title .shop-now {
-		display: block;
-	}
-}
-
-@media screen and (max-width: 575px) {
-	.bamboo-lunch-box__wrapper_text.tablet .bamboo-lunch-box__wrapper_text_title,
-          .bamboo-lunch-box__wrapper_text.tablet .bamboo-lunch-box__wrapper_text_under-title {
-		display: block;
-	}
-}
-
-.bamboo-lunch-box__wrapper_text_title {
-	position: relative;
-    font-family: "Affogato";
-    font-size: 45px;
-    font-weight: bold;
-    font-weight: 900;
-    text-transform: uppercase;
-	line-height: 55px;
-	color: #000;
-	margin-bottom: 0;
-}
-
-.bamboo-lunch-box__wrapper_text_title:before {
-	content: "";
-	position: absolute;
-	right: -73px;
-	bottom: 73px;
-	width: 73px;
-	height: 83px;
-}
-
-@media screen and (max-width: 575px) {
-	.bamboo-lunch-box__wrapper_text_title:before {
-		display: none;
-	}
-}
-
-.bamboo-lunch-box__wrapper_text_under-title {
-	font-family: Oduda;
-	font-weight: normal;
-	font-size: 10px;
-	line-height: 14px;
-	text-align: center;
-	color: #000;
-	margin-bottom: 8px;
-}
-
-@media screen and (max-width: 768px) {
-	.bamboo-lunch-box__wrapper_text_under-title br {
-		display: none;
-    }
-    .under-tablet-title{
+      &_title {
+        position: relative;
         font-family: Affogato;
         font-weight: 900;
         font-size: 26.2px;
         line-height: 55px;
-        text-align: center;
         color: #000;
         margin-bottom: 0;
-    }
-    .under-tablet-text{
+
+        @include breakpoint(sm) {
+          margin-bottom: 15px;
+          font-size: 60px;
+          line-height: 55px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: -73px;
+          bottom: 73px;
+          width: 73px;
+          height: 83px;
+          @media screen and (max-width: 575px) {
+            display: none;
+          }
+        }
+      }
+      &_under-title {
         font-family: Oduda;
-    max-width: 625px;
-    width: 100%;
-    font-weight: normal;
-    font-size: 10.2px;
-    line-height: 14px;
-    text-align: center;
-    color: #000;
-    }
-    .shop-now.under-tablet-shop-now{
-        margin-left: 31px;
-    padding: 4px 3px;
-    background: #270089;
-    font-family: Affogato;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    border: none;
-    text-transform: uppercase;
-    width: 82px;
-    display: block;
-    letter-spacing: 0.4px;
-    }
-
-}
-
-
-@media (min-width: 576px) and (max-width: 768px){
-    .bamboo-lunch-box__wrapper_text_title{
-        color: #7ac843;
-        margin-left: 80px;
-        font-size: 64px;
-        margin-top: -88px;
-    }
-    #under-tablet-title201{
-        font-size: 24px;
-    line-height: 32px;
-    text-align: center;
-    padding: 0 50px;
-    }
-    .bamboo-lunch-box__wrapper_text{
-        padding-top: 180px;
-        padding-left: -5px;
-    }
-    .bamboo-lunch-box__wrapper_text.under-table-title2{
-        font-size: 24px;
-        line-height: 32px; 
-        padding-top: 0 !important;
-    }
-    .shop-now.under-tablet-shop-now{   
-         background: #270089;
-        font-family: Affogato;
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 19px;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
         text-align: center;
-        color: #fff;
-        border-radius: 7px;
-        border: none;
-        text-transform: uppercase;
-        width: 82px;
-        display: block;
-        letter-spacing: 0.4px;
-        text-align: left;
-    font-size: 32px;
-    line-height: 43px;
-    width: 197px;
-    padding: 7px 4px 3px 21px;
+        color: #000;
+        margin-bottom: 8px;
+        br {
+          @media screen and (max-width: 768px){
+            display: none;
+          }
+        }
+        @include breakpoint(md) {
+          margin-bottom: 30px;
+        }
+        @include breakpoint(sm) {
+          font-size: 24px;
+          line-height: 32px;
+          margin-bottom: 115px;
+        }
+
+      }
+      .shop-now {
+        @include breakpoint(sm) {
+          margin-right: 33px;
+        }
+        @include shopNow();
+      }
     }
-    .bamboo-lunch-box__wrapper_text_under-title .under-tablet-text .under-tablet-title2{
-        font-size: 24px;
-    line-height: 32px;
-    padding: 0 50px;
-    }
+  }
 }
-@media (min-width: 768px) and (max-width: 30000px){
-    .bamboo-lunch-box__wrapper_img {
-        margin-left: 250px;
-    }
-    .bamboo-lunch-box__wrapper_text_title {
-        color: #7ac043;
-        font-size: 69px;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-    .bamboo-lunch-box__wrapper_text_under-title {
-        color: #000000;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-        margin-top: 100px;
-        width: auto;
-    }
-    .shop-now{
-        margin-top: 50px;
-    }
+@media (min-width: 1200px) {
+  .bamboo-lunch__wrapper_img img{
+    margin-left: 350px;
+  }
 }
-.shop-now{
-    margin-left: 31px;
-    padding: 4px 3px;
-    background: #270089;
-    font-family: Affogato;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    border: none;
-    text-transform: uppercase;
-    width: 82px;
-    display: block;
-    letter-spacing: 0.4px;
-    text-align: left;
-    font-size: 32px;
-    line-height: 43px;
-    width: 197px;
-    padding: 7px 4px 3px 21px;
+@media screen and (max-width: 768px) {
+  .bamboo-lunch__wrapper_img img{
+    width: 80%;
+    margin-left: 45px;
+    margin-bottom: 5px;
+  }
 }
-@media (min-width: 768px) and (max-width: 30000px){
-    .tablet .shop-now{
-        padding: 4px 3px;
-    background: #270089;
-    font-family: Affogato;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    border-radius: 7px;
-    border: none;
-    text-transform: uppercase;
-    width: 82px;
-    display: block;
-    letter-spacing: 0.4px;
-    }
+@media (min-width: 576px){
+  .bamboo-lunch__wrapper_text_title{
+    color: #7ac043;
+  }
 }

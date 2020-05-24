@@ -118,21 +118,21 @@
 }
 @media (min-width: 320px) and (max-width: 575px) {
   .bamboo-sipper-bottle{
-      background: url("/img/bamboo-sipper-mobilebg.png") no-repeat center;
+    background: url("/img/bamboo-sipper-mobilebg.png") no-repeat center;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .bamboo-sipper-bottle{
-      background: url("/img/bamboo-sipper-tabletbg.png") no-repeat center;
-      height: 473px;
+    background: url("/img/bamboo-sipper-tabletbg.png") no-repeat center;
+    height: 473px;
   }
   #tablet-content{
-      margin-left: -150px;
+    margin-left: -150px;
   }
   .bamboo-sipper-bottle__wrapper_img img {
-      width: 100%;
-      height: auto;
-      margin-left: -20px;
-      margin-top: 70px;
+    width: 100%;
+    height: auto;
+    margin-left: -20px;
+    margin-top: 70px;
   }
 }
