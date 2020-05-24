@@ -1,0 +1,140 @@
+.classic-sipper-bottle{
+    padding: 20px 0;
+    background: url("/img/classic-sipper-desktop.png") no-repeat center #FBEED1;
+    background-size: cover;
+    margin-bottom: 0;
+    @media screen and (max-width: 575px){
+      background-position: 15% center;
+    }
+    @include breakpoint(md) {
+      margin-bottom: 20px;
+    }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 238px;
+      @media screen and (max-width: 768px){
+        padding-left: 180px;
+      }
+      @media screen and (max-width: 575px){
+        padding-left: 0;
+      }
+      &_text {
+        position: relative;
+        z-index: 1;
+        max-width: 594px;
+        width: 100%;
+        &:not(.tablet) {
+          padding-top: 79px;
+          padding-left: 65px;
+          @media screen and (max-width: 768px){
+            .classic-sipper-bottle__wrapper_text_under-title, .shop-now {
+              display: none;
+            }
+          }
+          @media screen and (max-width: 575px){
+            display: none;
+          }
+        }
+        &.tablet {
+          display: none;
+          @media screen and (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            margin-bottom: 20px;
+            .classic-sipper-bottle__wrapper_text_title {
+              display: none;
+            }
+          }
+          @media screen and (max-width: 575px){
+            .classic-sipper-bottle__wrapper_text_title {
+              display: block;
+            }
+          }
+        }
+        &_title {
+          font-family: Affogato;
+          font-weight: 900;
+          font-size: 26.2px;
+          line-height: 55px;
+          text-align: left;
+          color: #000;
+          margin-bottom: 0;
+          @include breakpoint(sm) {
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 55px;
+            margin-bottom: 12px;
+          }
+        }
+        &_under-title {
+          font-family: Oduda;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 14px;
+          text-align: center;
+          color: #000;
+          padding: 0 30px;
+          br {
+            @media screen and (max-width: 768px){
+              display: none;
+            }
+          }
+          @include breakpoint(md) {
+            margin-bottom: 97px;
+            padding: 0;
+            text-align: left;
+          }
+          @include breakpoint(sm) {
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 28px;
+          }
+        }
+        .shop-now {
+          @include shopNow();
+          margin-left: 0;
+          @include breakpoint(md) {
+            margin-left: 46px;
+          }
+        }
+      }
+      &_img {
+        max-width: 520px;
+        width: 100%;
+        @media screen and (max-width: 767px){
+          max-width: 382px;
+        }
+        @media screen and (max-width: 575px){
+          max-width: 300px;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 575px) {
+    //.classic-sipper-bottle{
+    //    background: url("/img/classic-sipper-mobile.png") no-repeat center;
+    //}
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .classic-sipper-bottle{
+        background: url("/img/classic-sipper-tablet.png") no-repeat center;
+        height: 473px;
+    }
+    #tablet-content{
+        margin-left: -150px;
+    }
+    .classic-sipper-bottle__wrapper_img img {
+        width: 100%;
+        height: auto;
+        margin-left: -150px;
+        margin-top: 70px;
+    }
+  }
